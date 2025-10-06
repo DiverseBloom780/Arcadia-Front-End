@@ -1,11 +1,38 @@
 <UserControl x:Class="Arcadia.UI.Tabs.LibraryTab"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
              Background="#111">
-    <Grid>
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Game List -->
         <ListBox x:Name="GameList"
-                 Foreground="White" Background="#222"
-                 FontSize="18" Margin="40"
-                 SelectionChanged="GameList_SelectionChanged"/>
+                 SelectionChanged="GameList_SelectionChanged"
+                 Background="#222"
+                 Foreground="White"
+                 FontSize="18"
+                 BorderThickness="0"
+                 ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+
+        <!-- Game Details -->
+        <StackPanel Grid.Column="1" Margin="20,0,0,0">
+            <TextBlock x:Name="SelectedGameTitle"
+                       Text="Select a game from the list."
+                       FontSize="24"
+                       FontWeight="Bold"
+                       Foreground="White"
+                       Margin="0,0,0,10"/>
+            <TextBlock x:Name="SelectedGameInfo"
+                       Text=""
+                       FontSize="16"
+                       Foreground="White"
+                       TextWrapping="Wrap"/>
+        </StackPanel>
     </Grid>
 </UserControl>
