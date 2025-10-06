@@ -43,14 +43,14 @@ namespace Arcadia.UI
             CheckForApplicationUpdates();
             
             // Set the initial view to the Game Wheel when the window loads
-            // NOTE: Using parameterless constructor now, assuming the tab pulls data internally or is updated later
-            SwitchTab(new GameWheelTab()); 
+            // NOTE: Must pass dependencies to tabs, otherwise LibraryTab will fail.
+            SwitchTab(new GameWheelTab(_games)); 
         }
 
         private void InitializeServices()
         {
             // Use Path.Combine for safely constructing the AppData path
-            string appDataPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Arcadia");
+            string appDataPath = Path.Combine(Environment.GetFolderPath(SpecialFolder.ApplicationData), "Arcadia");
             
             // Ensure the application data directory exists
             Directory.CreateDirectory(appDataPath);
@@ -234,8 +234,8 @@ namespace Arcadia.UI
         /// </summary>
         private void GamesButton_Click(object sender, RoutedEventArgs e)
         {
-            // Use the new GameWheelTab
-            SwitchTab(new GameWheelTab()); 
+            // Must pass dependencies to prevent compilation errors based on GameWheelTab constructor assumption
+            SwitchTab(new GameWheelTab(_games)); 
         }
         
         /// <summary>
@@ -243,7 +243,8 @@ namespace Arcadia.UI
         /// </summary>
         private void LibraryButton_Click(object sender, RoutedEventArgs e)
         {
-            SwitchTab(new LibraryTab());
+            // Corrected: LibraryTab requires the List<Game> dependency
+            SwitchTab(new LibraryTab(_games));
         }
         
         /// <summary>
@@ -251,7 +252,8 @@ namespace Arcadia.UI
         /// </summary>
         private void SettingsButton_Click(object sender, RoutedEventArgs e)
         {
-            SwitchTab(new SettingsTab());
+            // Corrected: SettingsTab requires the SettingsManager dependency
+            SwitchTab(new SettingsTab(_settingsManager));
         }
         
         /// <summary>
@@ -259,7 +261,8 @@ namespace Arcadia.UI
         /// </summary>
         private void UpdaterButton_Click(object sender, RoutedEventArgs e)
         {
-            SwitchTab(new UpdaterTab());
+            // Corrected: UpdaterTab requires dependencies
+            SwitchTab(new UpdaterTab(_gitHubUpdater, _settingsManager));
         }
     }
 
