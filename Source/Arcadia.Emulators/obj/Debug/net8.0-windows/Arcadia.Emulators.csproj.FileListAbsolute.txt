@@ -1,0 +1,30 @@
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Emulators\bin\Debug\net8.0-windows\Arcadia.Emulators.deps.json
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Emulators\bin\Debug\net8.0-windows\Arcadia.Emulators.dll
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Emulators\bin\Debug\net8.0-windows\Arcadia.Emulators.pdb
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Emulators\bin\Debug\net8.0-windows\Arcadia.Core.dll
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Emulators\bin\Debug\net8.0-windows\Arcadia.Core.pdb
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Emulators\obj\Debug\net8.0-windows\Arcadia.Emulators.csproj.AssemblyReference.cache
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Emulators\obj\Debug\net8.0-windows\Arcadia.Emulators.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Emulators\obj\Debug\net8.0-windows\Arcadia.Emulators.AssemblyInfoInputs.cache
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Emulators\obj\Debug\net8.0-windows\Arcadia.Emulators.AssemblyInfo.cs
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Emulators\obj\Debug\net8.0-windows\Arcadia.Emulators.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Emulators\obj\Debug\net8.0-windows\Arcadia..C28A0241.Up2Date
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Emulators\obj\Debug\net8.0-windows\Arcadia.Emulators.dll
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Emulators\obj\Debug\net8.0-windows\refint\Arcadia.Emulators.dll
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Emulators\obj\Debug\net8.0-windows\Arcadia.Emulators.pdb
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Emulators\obj\Debug\net8.0-windows\ref\Arcadia.Emulators.dll
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Emulators\bin\Debug\net8.0-windows\Arcadia.Emulators.deps.json
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Emulators\bin\Debug\net8.0-windows\Arcadia.Emulators.dll
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Emulators\bin\Debug\net8.0-windows\Arcadia.Emulators.pdb
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Emulators\bin\Debug\net8.0-windows\Arcadia.Core.dll
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Emulators\bin\Debug\net8.0-windows\Arcadia.Core.pdb
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Emulators\obj\Debug\net8.0-windows\Arcadia.Emulators.csproj.AssemblyReference.cache
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Emulators\obj\Debug\net8.0-windows\Arcadia.Emulators.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Emulators\obj\Debug\net8.0-windows\Arcadia.Emulators.AssemblyInfoInputs.cache
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Emulators\obj\Debug\net8.0-windows\Arcadia.Emulators.AssemblyInfo.cs
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Emulators\obj\Debug\net8.0-windows\Arcadia.Emulators.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Emulators\obj\Debug\net8.0-windows\Arcadia..C28A0241.Up2Date
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Emulators\obj\Debug\net8.0-windows\Arcadia.Emulators.dll
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Emulators\obj\Debug\net8.0-windows\refint\Arcadia.Emulators.dll
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Emulators\obj\Debug\net8.0-windows\Arcadia.Emulators.pdb
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Emulators\obj\Debug\net8.0-windows\ref\Arcadia.Emulators.dll
