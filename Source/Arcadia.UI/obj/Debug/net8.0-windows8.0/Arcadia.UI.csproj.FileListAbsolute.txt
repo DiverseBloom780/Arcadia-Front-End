@@ -1,0 +1,5 @@
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.UI\obj\Debug\net8.0-windows8.0\Arcadia.UI.csproj.AssemblyReference.cache
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.UI\obj\Debug\net8.0-windows8.0\Arcadia.UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.UI\obj\Debug\net8.0-windows8.0\Arcadia.UI.AssemblyInfoInputs.cache
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.UI\obj\Debug\net8.0-windows8.0\Arcadia.UI.AssemblyInfo.cs
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.UI\obj\Debug\net8.0-windows8.0\Arcadia.UI.csproj.CoreCompileInputs.cache
