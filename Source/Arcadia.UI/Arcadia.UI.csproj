@@ -4,16 +4,16 @@
     <TargetFramework>net8.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <EnableWindowsTargeting>true</EnableWindowsTargeting>
-    <UseWPF>False</UseWPF>
-    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>false</UseWindowsForms>
     <LangVersion>latest</LangVersion>
-    <!-- Removed ApplicationIcon to fix build error -->
+    <ApplicationIcon>icon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Arcadia.Core\Arcadia.Core.csproj" />
-    <ProjectReference Include="..\Arcadia.Launchers\Arcadia.Launchers.csproj" />
-    <ProjectReference Include="..\Arcadia.Updater\Arcadia.Updater.csproj" />
+    <ProjectReference Include="..\Arcadia.Launchers\\Arcadia.Launchers.csproj" />
+    <ProjectReference Include="..\Arcadia.Updater\\Arcadia.Updater.csproj" />
   </ItemGroup>
 
   <ItemGroup>
