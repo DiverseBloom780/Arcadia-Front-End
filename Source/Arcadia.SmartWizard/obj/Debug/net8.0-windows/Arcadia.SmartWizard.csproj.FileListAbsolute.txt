@@ -1,0 +1,30 @@
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.SmartWizard\bin\Debug\net8.0-windows\Arcadia.SmartWizard.deps.json
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.SmartWizard\bin\Debug\net8.0-windows\Arcadia.SmartWizard.dll
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.SmartWizard\bin\Debug\net8.0-windows\Arcadia.SmartWizard.pdb
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.SmartWizard\bin\Debug\net8.0-windows\Arcadia.Core.dll
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.SmartWizard\bin\Debug\net8.0-windows\Arcadia.Core.pdb
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.SmartWizard\obj\Debug\net8.0-windows\Arcadia.SmartWizard.csproj.AssemblyReference.cache
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.SmartWizard\obj\Debug\net8.0-windows\Arcadia.SmartWizard.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.SmartWizard\obj\Debug\net8.0-windows\Arcadia.SmartWizard.AssemblyInfoInputs.cache
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.SmartWizard\obj\Debug\net8.0-windows\Arcadia.SmartWizard.AssemblyInfo.cs
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.SmartWizard\obj\Debug\net8.0-windows\Arcadia.SmartWizard.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.SmartWizard\obj\Debug\net8.0-windows\Arcadia..3D3A50AA.Up2Date
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.SmartWizard\obj\Debug\net8.0-windows\Arcadia.SmartWizard.dll
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.SmartWizard\obj\Debug\net8.0-windows\refint\Arcadia.SmartWizard.dll
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.SmartWizard\obj\Debug\net8.0-windows\Arcadia.SmartWizard.pdb
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.SmartWizard\obj\Debug\net8.0-windows\ref\Arcadia.SmartWizard.dll
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.SmartWizard\bin\Debug\net8.0-windows\Arcadia.SmartWizard.deps.json
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.SmartWizard\bin\Debug\net8.0-windows\Arcadia.SmartWizard.dll
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.SmartWizard\bin\Debug\net8.0-windows\Arcadia.SmartWizard.pdb
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.SmartWizard\bin\Debug\net8.0-windows\Arcadia.Core.dll
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.SmartWizard\bin\Debug\net8.0-windows\Arcadia.Core.pdb
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.SmartWizard\obj\Debug\net8.0-windows\Arcadia.SmartWizard.csproj.AssemblyReference.cache
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.SmartWizard\obj\Debug\net8.0-windows\Arcadia.SmartWizard.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.SmartWizard\obj\Debug\net8.0-windows\Arcadia.SmartWizard.AssemblyInfoInputs.cache
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.SmartWizard\obj\Debug\net8.0-windows\Arcadia.SmartWizard.AssemblyInfo.cs
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.SmartWizard\obj\Debug\net8.0-windows\Arcadia.SmartWizard.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.SmartWizard\obj\Debug\net8.0-windows\Arcadia..3D3A50AA.Up2Date
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.SmartWizard\obj\Debug\net8.0-windows\Arcadia.SmartWizard.dll
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.SmartWizard\obj\Debug\net8.0-windows\refint\Arcadia.SmartWizard.dll
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.SmartWizard\obj\Debug\net8.0-windows\Arcadia.SmartWizard.pdb
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.SmartWizard\obj\Debug\net8.0-windows\ref\Arcadia.SmartWizard.dll
