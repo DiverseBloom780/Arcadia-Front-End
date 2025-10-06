@@ -1,0 +1,30 @@
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\Arcadia.Launchers.deps.json
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\Arcadia.Launchers.dll
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\Arcadia.Launchers.pdb
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\Arcadia.Core.dll
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\Arcadia.Core.pdb
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\Arcadia.Launchers.csproj.AssemblyReference.cache
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\Arcadia.Launchers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\Arcadia.Launchers.AssemblyInfoInputs.cache
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\Arcadia.Launchers.AssemblyInfo.cs
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\Arcadia.Launchers.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\Arcadia..8813EFAF.Up2Date
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\Arcadia.Launchers.dll
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\refint\Arcadia.Launchers.dll
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\Arcadia.Launchers.pdb
+C:\Users\kevin\Downloads\Frontend System Request with Direct Emulator Launch\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\ref\Arcadia.Launchers.dll
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\Arcadia.Launchers.deps.json
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\Arcadia.Launchers.dll
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\Arcadia.Launchers.pdb
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\Arcadia.Core.dll
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\Arcadia.Core.pdb
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\Arcadia.Launchers.csproj.AssemblyReference.cache
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\Arcadia.Launchers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\Arcadia.Launchers.AssemblyInfoInputs.cache
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\Arcadia.Launchers.AssemblyInfo.cs
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\Arcadia.Launchers.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\Arcadia..8813EFAF.Up2Date
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\Arcadia.Launchers.dll
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\refint\Arcadia.Launchers.dll
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\Arcadia.Launchers.pdb
+C:\Users\kevin\Downloads\Arcadia\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\ref\Arcadia.Launchers.dll
