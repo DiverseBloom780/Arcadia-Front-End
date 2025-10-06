@@ -14,7 +14,7 @@ using Arcadia.Core.Services;
 using Arcadia.Launchers;
 using Arcadia.Updater;
 
-// Import the namespace where the new tabs will reside (assuming standard structure)
+// Mandatory import for tab components
 using Arcadia.UI.Tabs; 
 
 namespace Arcadia.UI
@@ -43,7 +43,8 @@ namespace Arcadia.UI
             CheckForApplicationUpdates();
             
             // Set the initial view to the Game Wheel when the window loads
-            SwitchTab(new GameWheelTab(_games)); 
+            // NOTE: Using parameterless constructor now, assuming the tab pulls data internally or is updated later
+            SwitchTab(new GameWheelTab()); 
         }
 
         private void InitializeServices()
@@ -87,8 +88,7 @@ namespace Arcadia.UI
 
         private async void LoadGames()
         {
-            // Assuming LoadingOverlay is defined in XAML, removing the call since it wasn't provided previously
-            // LoadingOverlay.Visibility = Visibility.Visible;
+            LoadingOverlay.Visibility = Visibility.Visible;
 
             _games = await Task.Run(() =>
             {
@@ -101,14 +101,15 @@ namespace Arcadia.UI
                 return games;
             });
 
-            // Assuming GameCountText is defined in XAML
+            // Update UI element once game count is available
+            // This assumes an element like GameCountText exists in MainWindow or is handled elsewhere
             // GameCountText.Text = $"{_games.Count} Games";
-            // LoadingOverlay.Visibility = Visibility.Collapsed;
+            
+            LoadingOverlay.Visibility = Visibility.Collapsed;
 
             if (_games.Count > 0)
             {
                 // Note: The logic for UpdateGameDetails/RenderGameWheel should ideally move to GameWheelTab
-                // But for now, we leave the original calls which interact with controls assumed to be in the main window.
                 UpdateGameDetails(_games[_selectedIndex]); 
             }
         }
@@ -153,8 +154,7 @@ namespace Arcadia.UI
             return currentGames;
         }
         
-        // NOTE: This logic should ideally move to the GameWheelTab, 
-        // but remains here for backward compatibility with unprovided controls.
+        // NOTE: These methods are placeholders for existing functionality
         private void RenderGameWheel() { /* Existing Wheel Render Logic */ } 
         private void UpdateGameDetails(Game game) { /* Existing Detail Update Logic */ }
         private void Window_KeyDown(object sender, KeyEventArgs e) { /* Existing Key Down Logic */ }
@@ -163,7 +163,53 @@ namespace Arcadia.UI
         private void LaunchSelectedGame() { /* Existing Launch Logic */ }
         private void OpenSettings() { /* Existing Settings Logic */ }
         private void OpenSearch() { /* Existing Search Logic */ }
-        private async Task CheckForApplicationUpdates() { /* Existing Update Check Logic */ }
+        private async Task CheckForApplicationUpdates() { /* Existing Update Check Logic */
+            
+            if (_settingsManager.Settings.UpdateSettings.CheckForUpdatesOnStartup == false || _gitHubUpdater == null)
+            {
+                return;
+            }
+
+            LoadingOverlay.Visibility = Visibility.Visible;
+
+            try
+            {
+                var updateInfo = await _gitHubUpdater.CheckForUpdatesAsync(); 
+                
+                if (updateInfo != null)
+                {
+                    MessageBoxResult result = System.Windows.MessageBox.Show(
+                        $"A new version of Arcadia ({updateInfo.Version}) is available!\n\nRelease Notes:\n{updateInfo.ReleaseNotes}\n\nDo you want to download and install it now?",
+                        "Arcadia Update Available",
+                        MessageBoxButton.YesNo,
+                        MessageBoxImage.Information
+                    );
+
+                    if (result == MessageBoxResult.Yes)
+                    {
+                        // Implement progress reporting if needed
+                        bool success = await _gitHubUpdater.DownloadAndInstallUpdateAsync(updateInfo);
+                        if (success)
+                        {
+                            System.Windows.MessageBox.Show("Update downloaded and will be installed. Arcadia will restart.", "Update Successful", MessageBoxButton.OK, MessageBoxImage.Information);
+                            Application.Current.Shutdown();
+                        }
+                        else
+                        {
+                            System.Windows.MessageBox.Show("Failed to download and install update.", "Update Failed", MessageBoxButton.OK, MessageBoxImage.Error);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Windows.MessageBox.Show($"Error checking for updates: {ex.Message}", "Update Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            finally
+            {
+                LoadingOverlay.Visibility = Visibility.Collapsed;
+            }
+        }
 
         
         // ====================================================================
@@ -189,24 +235,31 @@ namespace Arcadia.UI
         private void GamesButton_Click(object sender, RoutedEventArgs e)
         {
             // Use the new GameWheelTab
-            SwitchTab(new GameWheelTab(_games)); 
+            SwitchTab(new GameWheelTab()); 
         }
         
-        // Handlers for the new sidebar buttons
-        
+        /// <summary>
+        /// Handler for the Library button.
+        /// </summary>
         private void LibraryButton_Click(object sender, RoutedEventArgs e)
         {
-            SwitchTab(new LibraryTab(_games)); 
+            SwitchTab(new LibraryTab());
         }
         
+        /// <summary>
+        /// Handler for the Settings button.
+        /// </summary>
         private void SettingsButton_Click(object sender, RoutedEventArgs e)
         {
-            SwitchTab(new SettingsTab(_settingsManager));
+            SwitchTab(new SettingsTab());
         }
         
+        /// <summary>
+        /// Handler for the Updater button (assuming it exists in XAML).
+        /// </summary>
         private void UpdaterButton_Click(object sender, RoutedEventArgs e)
         {
-            SwitchTab(new UpdaterTab(_gitHubUpdater, _settingsManager));
+            SwitchTab(new UpdaterTab());
         }
     }
 
