@@ -19,24 +19,40 @@ namespace Arcadia.Core.Services
 
         private AppSettings LoadSettings()
         {
-            if (File.Exists(_settingsFilePath))
+            try
             {
-                string json = File.ReadAllText(_settingsFilePath);
-                return JsonConvert.DeserializeObject<AppSettings>(json) ?? new AppSettings();
+                if (File.Exists(_settingsFilePath))
+                {
+                    string json = File.ReadAllText(_settingsFilePath);
+                    return JsonConvert.DeserializeObject<AppSettings>(json) ?? new AppSettings();
+                }
             }
+            catch (Exception ex)
+            {
+                // Optional: log error or fallback
+                Console.WriteLine($"Error loading settings: {ex.Message}");
+            }
+
             return new AppSettings();
         }
 
         public void SaveSettings()
         {
-            string json = JsonConvert.SerializeObject(Settings, Formatting.Indented);
-            var directory = Path.GetDirectoryName(_settingsFilePath);
-            if (!string.IsNullOrEmpty(directory) && !Directory.Exists(directory))
+            try
             {
-                Directory.CreateDirectory(directory);
-            }
+                string json = JsonConvert.SerializeObject(Settings, Formatting.Indented);
+                var directory = Path.GetDirectoryName(_settingsFilePath);
+                if (!string.IsNullOrEmpty(directory) && !Directory.Exists(directory))
+                {
+                    Directory.CreateDirectory(directory);
+                }
 
-            File.WriteAllText(_settingsFilePath, json);
+                File.WriteAllText(_settingsFilePath, json);
+            }
+            catch (Exception ex)
+            {
+                throw new InvalidOperationException("Failed to save settings.", ex);
+            }
         }
 
         public void ResetSettings()
