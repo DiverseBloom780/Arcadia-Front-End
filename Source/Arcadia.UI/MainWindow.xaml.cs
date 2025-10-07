@@ -20,10 +20,10 @@ namespace Arcadia.UI
 {
     public partial class MainWindow : Window
     {
-        private SettingsManager _settingsManager;
+        private SettingsManager _settingsManager = null!;
         private GitHubUpdater? _gitHubUpdater;
         private List<Game> _games = new List<Game>();
-        private DispatcherTimer _clockTimer;
+        private DispatcherTimer _clockTimer = null!;
 
         public MainWindow()
         {
