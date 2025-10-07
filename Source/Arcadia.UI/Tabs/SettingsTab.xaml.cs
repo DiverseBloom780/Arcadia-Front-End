@@ -2,6 +2,7 @@ using System;
 using System.Windows;
 using System.Windows.Controls;
 using Arcadia.Core.Services;
+using Arcadia.Core.Models;
 
 namespace Arcadia.UI.Tabs
 {
@@ -127,11 +128,8 @@ namespace Arcadia.UI.Tabs
 
             if (result == MessageBoxResult.Yes && _settingsManager != null)
             {
-                // Create new default settings
-                _settingsManager.Settings = new AppSettings();
+                _settingsManager.Settings = new AppSettings(); // ✅ Now writable
                 _settingsManager.SaveSettings();
-
-                // Reload the UI
                 LoadSettings();
 
                 MessageBox.Show("Settings reset to defaults!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
