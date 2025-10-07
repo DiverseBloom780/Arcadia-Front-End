@@ -1,0 +1,175 @@
+🎮 Arcadia – Frontend Master Outline
+📌 Phase 1a – Core Frontend Build
+
+Independent project (like Attract-Mode, Hyperspin).
+
+Rendering: Direct3D11 + OpenGL.
+
+No reliance on Qt.
+
+Core Features
+
+Game Wheel UI (Primary)
+
+Classic Hyperspin-style wheel.
+
+Wheel direction options:
+
+Vertical scrolling
+
+Horizontal scrolling
+
+Angled/curved wheel style
+
+Users can freely switch wheel direction in settings.
+
+Smooth animations.
+
+Media Support
+
+Boxart, Cartart, Logos, and Themes.
+
+Integrated video themes and gameplay previews.
+
+PC Launcher Integration (detected & listed, not bundled)
+
+Steam
+
+Epic Games
+
+GOG
+
+(No Xbox Cloud or streaming)
+
+Detect installed games, not cloud libraries.
+
+Emulator Integration
+
+No RetroArch requirement.
+
+Direct launch of standalone emulators.
+
+No reliance on AutoHotkey scripts.
+
+Auto download + unpack emulators.
+
+BIOS files are not included (user provides manually).
+
+TeknoParrot Support (Critical Feature)
+
+Arcadia scans TeknoParrot ROMs folder automatically.
+
+Auto-generates:
+
+GameProfiles (XML configs)
+
+GamePaths (exe/rom locations)
+
+Device & Control Configurations:
+
+Detects connected hardware:
+
+Steering wheels + pedals (force feedback optional)
+
+Lightguns (AimTrak, Sinden, Gun4IR)
+
+Joysticks & arcade sticks
+
+Gamepads (Xbox, DS4, generic)
+
+Auto-applies correct configs per game type:
+
+Driving → wheel/pedal mapping
+
+Shooting → lightgun mapping (with calibration)
+
+Fighting → joystick/gamepad mapping
+
+Smart Wizard can repair configs or switch input modes per game.
+
+Accuracy & Validation Standards:
+
+GameProfiles must match TeknoParrot’s XML schema exactly.
+
+Config generator must mirror TeknoParrot’s native format (no approximations).
+
+Validation layer checks XML syntax, paths, and bindings before launch.
+
+Smart Wizard flags/fixes errors automatically.
+
+Must adapt if TeknoParrot updates its formats.
+
+Automatic Media Downloads
+
+Auto-fetch artwork, logos, cartart, themes, and video previews.
+
+Runs in background, fills missing assets.
+
+📌 Phase 1b – Smart Wizard (AI Assistant)
+
+Text-only typed command interface.
+
+Knows Arcadia’s directory structure, configs, and settings.
+
+Core Functions:
+
+Setup help.
+
+Configures emulators automatically.
+
+Fixes missing/corrupt files.
+
+Automates setup steps (controllers, paths, artwork).
+
+Runs locally inside Arcadia (no external dependency).
+
+📌 Phase 2 – Arcadia Enhancements
+1. Dynamic Playlists & Smart Collections
+
+Auto playlists by genre, publisher, decade, completion status.
+
+Always up to date as library grows.
+
+5. Instant Media Generation (AI-Driven)
+
+Generate missing boxart, logos, fanart, and preview vids.
+
+Style filters: retro neon, modern flat, realistic, minimalist.
+
+6. Intelligent Search + Filters
+
+Search across all systems and launchers.
+
+Filters: multiplayer count, arcade-only, year/genre.
+
+Fast results even with massive libraries.
+
+7. Smart Save/State Manager
+
+Unified save-state UI across emulators.
+
+Resume last played instantly.
+
+Auto-backup saves.
+
+8. Game Preview Mode (Attract Feature)
+
+Hover = 30s gameplay preview.
+
+Option: auto cycle games like arcade attract mode.
+
+9. Plugin Ecosystem
+
+Support for custom themes, shaders, import/export tools.
+
+Official Arcadia Plugin SDK.
+
+Community expandable.
+
+10. Smart Multiplayer Helper
+
+Detects multiplayer-capable games.
+
+Auto playlists for co-op and 4-player.
+
+Preconfigures multiple controllers automatically.
