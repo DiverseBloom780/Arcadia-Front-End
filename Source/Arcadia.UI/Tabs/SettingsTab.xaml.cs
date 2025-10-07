@@ -1,59 +1,53 @@
-using System;
-using System.IO;
-using Newtonsoft.Json;
-using Arcadia.Core.Models;
+using System.Windows.Controls;
+using System.Windows;
+using Arcadia.Core.Services;
 
-namespace Arcadia.Core.Services
+namespace Arcadia.UI.Tabs
 {
-    public class SettingsManager
+    public partial class SettingsTab : UserControl
     {
-        private const string SettingsFilePath = "Config\\settings.json";
+        private readonly SettingsManager _settingsManager;
 
-        public AppSettings Settings { get; private set; }
-
-        public SettingsManager()
+        // Constructor now takes one SettingsManager argument
+        public SettingsTab(SettingsManager settingsManager)
         {
-            Settings = LoadSettings() ?? new AppSettings();
+            InitializeComponent();
+            _settingsManager = settingsManager;
+            DataContext = _settingsManager.Settings; // Set the settings object as the data context
+
+            // TODO: Implement binding setup here if not using XAML bindings
+
+            // Initial setup for the AnimationSpeedLabel (assuming no binding setup)
+            AnimationSpeedLabel.Text = $"{AnimationSpeedSlider.Value:F1}x";
+            AnimationSpeedSlider.ValueChanged += AnimationSpeedSlider_ValueChanged;
         }
 
-        public void SaveSettings()
+        private void AnimationSpeedSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            try
-            {
-                var json = JsonConvert.SerializeObject(Settings, Formatting.Indented);
-                var directory = Path.GetDirectoryName(SettingsFilePath);
-                if (!string.IsNullOrEmpty(directory) && !Directory.Exists(directory))
-                {
-                    Directory.CreateDirectory(directory);
-                }
-
-                File.WriteAllText(SettingsFilePath, json);
-            }
-            catch (Exception ex)
-            {
-                throw new InvalidOperationException("Failed to save settings.", ex);
-            }
+            AnimationSpeedLabel.Text = $"{e.NewValue:F1}x";
         }
 
-        private AppSettings? LoadSettings()
-        {
-            try
-            {
-                if (!File.Exists(SettingsFilePath))
-                    return null;
 
-                var json = File.ReadAllText(SettingsFilePath);
-                return JsonConvert.DeserializeObject<AppSettings>(json);
-            }
-            catch
-            {
-                return null;
-            }
+        // Implement the SaveSettings_Click event handler
+        private void SaveSettings_Click(object sender, RoutedEventArgs e)
+        {
+            // TODO: Ensure all UI controls are properly bound or read into _settingsManager.Settings
+            _settingsManager.SaveSettings();
+            MessageBox.Show("Settings saved successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
-        public void ResetSettings()
+        // Implement the ResetSettings_Click event handler
+        private void ResetSettings_Click(object sender, RoutedEventArgs e)
         {
-            Settings = new AppSettings();
+            if (MessageBox.Show("Are you sure you want to reset all settings to default?", "Confirm Reset", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
+            {
+                _settingsManager.ResetSettings();
+                // Re-apply the context or reload the tab to refresh UI
+                DataContext = null;
+                DataContext = _settingsManager.Settings;
+                
+                MessageBox.Show("Settings reset to defaults.", "Reset Complete", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
         }
     }
 }
