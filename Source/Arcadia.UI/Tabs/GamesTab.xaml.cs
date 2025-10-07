@@ -1,14 +1,14 @@
+// This file requires: Arcadia.Core project/assembly with Models.Game class
 using System.Collections.Generic;
 using System.Windows.Controls;
-using Arcadia.Core.Models; 
+using Arcadia.Core.Models;
 
 namespace Arcadia.UI.Tabs
 {
     public partial class GamesTab : UserControl
     {
         private readonly List<Game> _games;
-        
-        // Constructor now accepts List<Game>
+
         public GamesTab(List<Game> games)
         {
             InitializeComponent();

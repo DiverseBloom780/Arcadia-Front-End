@@ -1,6 +1,5 @@
 using System;
 using System.Diagnostics;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Navigation;
@@ -11,16 +10,14 @@ namespace Arcadia.UI.Tabs
 {
     public partial class UpdaterTab : UserControl
     {
-        private readonly GitHubUpdater _gitHubUpdater;
-        private readonly SettingsManager _settingsManager;
+        private readonly GitHubUpdater? _gitHubUpdater;
+        private readonly SettingsManager? _settingsManager;
 
-        public UpdaterTab(GitHubUpdater gitHubUpdater, SettingsManager settingsManager)
+        public UpdaterTab(GitHubUpdater? gitHubUpdater, SettingsManager? settingsManager)
         {
             InitializeComponent();
             _gitHubUpdater = gitHubUpdater;
             _settingsManager = settingsManager;
-            
-            CurrentVersionText.Text = _settingsManager.Settings?.General.Version ?? "Unknown";
         }
         
         public UpdaterTab() : this(null, null)
@@ -31,32 +28,30 @@ namespace Arcadia.UI.Tabs
         {
             if (_gitHubUpdater == null)
             {
-                StatusText.Text = "Error: Updater service is not initialized. Check application settings.";
+                MessageBox.Show("Updater not initialized.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 
-            StatusText.Text = "Checking for updates...";
-            ReleaseInfoText.Text = "";
-            
             try
             {
-                var updateInfo = await Task.Run(() => _gitHubUpdater.CheckForUpdatesAsync());
-
+                var updateInfo = await _gitHubUpdater.CheckForUpdatesAsync();
+                
                 if (updateInfo != null)
                 {
-                    StatusText.Text = $"Update Available: Version {updateInfo.Version}";
-                    ReleaseInfoText.Text = $"Release Notes:\n{updateInfo.ReleaseNotes}";
+                    MessageBox.Show(
+                        $"Update available: {updateInfo.Version}\n\n{updateInfo.ReleaseNotes}", 
+                        "Update Available", 
+                        MessageBoxButton.OK, 
+                        MessageBoxImage.Information);
                 }
                 else
                 {
-                    StatusText.Text = "You are running the latest version.";
-                    ReleaseInfoText.Text = $"Version {_settingsManager.Settings.General.Version} is up to date.";
+                    MessageBox.Show("You are running the latest version.", "Up to Date", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
             }
             catch (Exception ex)
             {
-                StatusText.Text = "Error checking for updates.";
-                ReleaseInfoText.Text = $"Details: {ex.Message}";
+                MessageBox.Show($"Error checking for updates: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -64,12 +59,16 @@ namespace Arcadia.UI.Tabs
         {
             try
             {
-                Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri) { UseShellExecute = true });
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = e.Uri.AbsoluteUri,
+                    UseShellExecute = true
+                });
                 e.Handled = true;
             }
             catch (Exception ex)
             {
-                System.Windows.MessageBox.Show($"Could not open link: {ex.Message}", "Navigation Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Error opening link: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }
