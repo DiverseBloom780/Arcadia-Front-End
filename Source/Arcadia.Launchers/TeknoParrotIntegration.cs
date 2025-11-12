@@ -9,38 +9,42 @@ namespace Arcadia.Launchers
 {
     public class TeknoParrotIntegration
     {
-        private const string TeknoParrotPath = "C:\\TeknoParrot"; // Default TeknoParrot installation path
-        private const string GameProfilesPath = "C:\\TeknoParrot\\GameProfiles";
-        private const string RomsPath = "C:\\TeknoParrot\\Roms";
+        private readonly string _teknoRoot;
+        private readonly string _profilesPath;
+        private readonly string _romsPath;
+
+        public TeknoParrotIntegration(string teknoRoot)
+        {
+            _teknoRoot = teknoRoot;
+            _profilesPath = Path.Combine(_teknoRoot, "GameProfiles");
+            _romsPath = Path.Combine(_teknoRoot, "Roms");
+        }
 
         public bool IsTeknoParrotInstalled()
         {
-            return Directory.Exists(TeknoParrotPath) && Directory.Exists(GameProfilesPath) && Directory.Exists(RomsPath);
+            return Directory.Exists(_teknoRoot) &&
+                   Directory.Exists(_profilesPath) &&
+                   Directory.Exists(_romsPath);
         }
 
         public List<Game> DetectInstalledGames()
         {
-            List<Game> detectedGames = new List<Game>();
+            var detectedGames = new List<Game>();
 
             if (!IsTeknoParrotInstalled())
-            {
                 return detectedGames;
-            }
 
-            // Scan ROMs folder for games and generate profiles if missing
-            foreach (string romFolder in Directory.GetDirectories(RomsPath))
+            foreach (string romFolder in Directory.GetDirectories(_romsPath))
             {
                 string gameName = new DirectoryInfo(romFolder).Name;
-                string profilePath = Path.Combine(GameProfilesPath, $"{gameName}.xml");
+                string profilePath = Path.Combine(_profilesPath, $"{gameName}.xml");
 
                 if (!File.Exists(profilePath))
                 {
-                    // Attempt to auto-generate a basic profile
                     GenerateBasicGameProfile(gameName, profilePath);
                 }
 
-                // Read profile and create Game object
-                Game game = ParseGameProfile(profilePath);
+                var game = ParseGameProfile(profilePath);
                 if (game != null)
                 {
                     detectedGames.Add(game);
@@ -52,12 +56,19 @@ namespace Arcadia.Launchers
 
         private void GenerateBasicGameProfile(string gameName, string profilePath)
         {
-            // This is a simplified example. A real implementation would need more logic
-            // to determine game type and specific settings.
-            XDocument doc = new XDocument(
+            // Try to find an executable inside the ROM folder
+            string exeFile = Directory.GetFiles(Path.Combine(_romsPath, gameName), "*.exe").FirstOrDefault();
+
+            if (exeFile == null)
+            {
+                Console.WriteLine($"No executable found for {gameName}, skipping profile generation.");
+                return;
+            }
+
+            var doc = new XDocument(
                 new XElement("GameProfile",
                     new XElement("GameName", gameName),
-                    new XElement("GamePath", Path.Combine(RomsPath, gameName, $"{gameName}.exe")), // Placeholder
+                    new XElement("GamePath", exeFile),
                     new XElement("Launcher", "TeknoParrot"),
                     new XElement("InputProfile", "Default")
                 )
@@ -65,30 +76,27 @@ namespace Arcadia.Launchers
             doc.Save(profilePath);
         }
 
-        private Game ParseGameProfile(string profilePath)
+        private Game? ParseGameProfile(string profilePath)
         {
             try
             {
-                XDocument doc = XDocument.Load(profilePath);
-                XElement root = doc.Root;
+                var doc = XDocument.Load(profilePath);
+                var root = doc.Root;
 
                 if (root == null || root.Name != "GameProfile") return null;
 
-                string gameName = root.Element("GameName")?.Value;
-                string gamePath = root.Element("GamePath")?.Value;
-                string launcher = root.Element("Launcher")?.Value;
+                string? gameName = root.Element("GameName")?.Value;
+                string? gamePath = root.Element("GamePath")?.Value;
+                string? launcher = root.Element("Launcher")?.Value;
 
                 if (string.IsNullOrEmpty(gameName) || string.IsNullOrEmpty(gamePath) || launcher != "TeknoParrot")
-                {
                     return null;
-                }
 
                 return new Game
                 {
                     Title = gameName,
-                    Path = gamePath,
-                    Platform = "Arcade (TeknoParrot)",
-                    // Populate other properties as needed from the XML
+                    ExecutablePath = gamePath,   // ✅ use ExecutablePath instead of missing Path
+                    Platform = "Arcade (TeknoParrot)"
                 };
             }
             catch (Exception ex)
@@ -100,21 +108,14 @@ namespace Arcadia.Launchers
 
         public void AutoConfigureInput(Game game)
         {
-            // This method would contain logic to detect connected hardware
-            // and modify the game\'s profile XML for input configuration.
-            // This is a complex task requiring hardware detection APIs (e.g., DirectInput, XInput)
-            // and detailed knowledge of TeknoParrot\'s input XML schema.
-
             Console.WriteLine($"Auto-configuring input for {game.Title}...");
-            // Placeholder for actual implementation
+            // TODO: Implement hardware detection + XML input mapping
         }
 
         public void ValidateGameProfile(string profilePath)
         {
-            // Implement XML schema validation here
             Console.WriteLine($"Validating TeknoParrot profile {profilePath}...");
-            // Placeholder for actual implementation
+            // TODO: Implement XML schema validation against TeknoParrot’s XSD
         }
     }
 }
-
