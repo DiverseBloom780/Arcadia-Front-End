@@ -1,3 +1,7 @@
+using System.Collections.Generic;
+using System.Windows.Controls;
+using Arcadia.Core.Models;
+
 namespace Arcadia.UI.Tabs
 {
     public partial class LibraryTab : UserControl
