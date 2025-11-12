@@ -1,6 +1,3 @@
-// File: ArcadiaLauncherForm.cs
-// Namespace: Arcadia.UI.Forms
-
 using System.Windows.Forms;
 
 namespace Arcadia.UI.Forms
