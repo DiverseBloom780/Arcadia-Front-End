@@ -23,7 +23,6 @@ namespace Arcadia.UI.Tabs
             CurrentVersionText.Text = _settingsManager?.Settings?.General.Version ?? "Unknown";
         }
 
-        // Parameterless constructor for XAML designer
         public UpdaterTab() : this(null, null) { }
 
         private async void CheckForUpdates_Click(object sender, RoutedEventArgs e)
