@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Updater\\Arcadia.Updater.csproj": {}
+    "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.Updater\\Arcadia.Updater.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Updater\\Arcadia.Updater.csproj": {
+    "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.Updater\\Arcadia.Updater.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Updater\\Arcadia.Updater.csproj",
+        "projectUniqueName": "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.Updater\\Arcadia.Updater.csproj",
         "projectName": "Arcadia.Updater",
-        "projectPath": "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Updater\\Arcadia.Updater.csproj",
-        "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Updater\\obj\\",
+        "projectPath": "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.Updater\\Arcadia.Updater.csproj",
+        "packagesPath": "C:\\Users\\lyonk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.Updater\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lyonk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -45,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -76,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

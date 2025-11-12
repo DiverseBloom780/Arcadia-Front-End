@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.UI\\Arcadia.UI.csproj": {}
+    "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.UI\\Arcadia.UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Core\\Arcadia.Core.csproj": {
+    "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.Core\\Arcadia.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Core\\Arcadia.Core.csproj",
+        "projectUniqueName": "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.Core\\Arcadia.Core.csproj",
         "projectName": "Arcadia.Core",
-        "projectPath": "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Core\\Arcadia.Core.csproj",
-        "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Core\\obj\\",
+        "projectPath": "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.Core\\Arcadia.Core.csproj",
+        "packagesPath": "C:\\Users\\lyonk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lyonk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,17 +32,7 @@
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
-            "projectReferences": {
-              "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Core\\Arcadia.Core.csproj": {
-                "projectPath": "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Core\\Arcadia.Core.csproj"
-              },
-              "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Launchers\\Arcadia.Launchers.csproj": {
-                "projectPath": "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Launchers\\Arcadia.Launchers.csproj"
-              },
-              "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Updater\\Arcadia.Updater.csproj": {
-                "projectPath": "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Updater\\Arcadia.Updater.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -55,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -65,17 +55,9 @@
               "target": "Package",
               "version": "[13.0.4, )"
             },
-            "SharpDX": {
+            "System.Data.SQLite": {
               "target": "Package",
-              "version": "[4.2.0, )"
-            },
-            "SharpDX.DXGI": {
-              "target": "Package",
-              "version": "[4.2.0, )"
-            },
-            "SharpDX.Direct3D11": {
-              "target": "Package",
-              "version": "[4.2.0, )"
+              "version": "[1.0.118, )"
             }
           },
           "imports": [
@@ -92,29 +74,26 @@
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App.WPF": {
-              "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Launchers\\Arcadia.Launchers.csproj": {
+    "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.Launchers\\Arcadia.Launchers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Launchers\\Arcadia.Launchers.csproj",
+        "projectUniqueName": "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.Launchers\\Arcadia.Launchers.csproj",
         "projectName": "Arcadia.Launchers",
-        "projectPath": "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Launchers\\Arcadia.Launchers.csproj",
-        "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Launchers\\obj\\",
+        "projectPath": "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.Launchers\\Arcadia.Launchers.csproj",
+        "packagesPath": "C:\\Users\\lyonk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.Launchers\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lyonk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -130,8 +109,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Core\\Arcadia.Core.csproj": {
-                "projectPath": "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Core\\Arcadia.Core.csproj"
+              "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.Core\\Arcadia.Core.csproj": {
+                "projectPath": "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.Core\\Arcadia.Core.csproj"
               }
             }
           }
@@ -146,7 +125,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -177,24 +156,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.UI\\Arcadia.UI.csproj": {
+    "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.UI\\Arcadia.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.UI\\Arcadia.UI.csproj",
+        "projectUniqueName": "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.UI\\Arcadia.UI.csproj",
         "projectName": "Arcadia.UI",
-        "projectPath": "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.UI\\Arcadia.UI.csproj",
-        "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.UI\\obj\\",
+        "projectPath": "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.UI\\Arcadia.UI.csproj",
+        "packagesPath": "C:\\Users\\lyonk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.UI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lyonk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -210,14 +189,14 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Core\\Arcadia.Core.csproj": {
-                "projectPath": "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Core\\Arcadia.Core.csproj"
+              "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.Core\\Arcadia.Core.csproj": {
+                "projectPath": "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.Core\\Arcadia.Core.csproj"
               },
-              "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Launchers\\Arcadia.Launchers.csproj": {
-                "projectPath": "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Launchers\\Arcadia.Launchers.csproj"
+              "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.Launchers\\Arcadia.Launchers.csproj": {
+                "projectPath": "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.Launchers\\Arcadia.Launchers.csproj"
               },
-              "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Updater\\Arcadia.Updater.csproj": {
-                "projectPath": "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Updater\\Arcadia.Updater.csproj"
+              "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.Updater\\Arcadia.Updater.csproj": {
+                "projectPath": "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.Updater\\Arcadia.Updater.csproj"
               }
             }
           }
@@ -232,7 +211,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -270,28 +249,28 @@
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             },
-            "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "Microsoft.WindowsDesktop.App": {
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Updater\\Arcadia.Updater.csproj": {
+    "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.Updater\\Arcadia.Updater.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Updater\\Arcadia.Updater.csproj",
+        "projectUniqueName": "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.Updater\\Arcadia.Updater.csproj",
         "projectName": "Arcadia.Updater",
-        "projectPath": "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Updater\\Arcadia.Updater.csproj",
-        "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kevin\\Downloads\\Arcadia\\Source\\Arcadia.Updater\\obj\\",
+        "projectPath": "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.Updater\\Arcadia.Updater.csproj",
+        "packagesPath": "C:\\Users\\lyonk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lyonk\\source\\repos\\DiverseBloom780\\Arcadia-Front-End\\Source\\Arcadia.Updater\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lyonk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -319,7 +298,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -350,7 +329,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
