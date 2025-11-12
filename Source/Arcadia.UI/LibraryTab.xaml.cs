@@ -1,14 +1,9 @@
-using System.Collections.Generic;
-using System.Windows.Controls;
-using Arcadia.Core.Models;
-
 namespace Arcadia.UI.Tabs
 {
     public partial class LibraryTab : UserControl
     {
         private readonly List<Game> _games;
 
-        // Constructor expects a list of games from MainWindow
         public LibraryTab(List<Game> games)
         {
             InitializeComponent();
@@ -26,7 +21,7 @@ namespace Arcadia.UI.Tabs
                 if (selectedGame != null)
                 {
                     SelectedGameTitle.Text = selectedGame.Title;
-                    SelectedGameInfo.Text = 
+                    SelectedGameInfo.Text =
                         $"Genre: {selectedGame.Genre ?? "Unknown"}\n" +
                         $"Publisher: {selectedGame.Publisher ?? "Unknown"}\n" +
                         $"Year: {selectedGame.ReleaseYear?.ToString() ?? "Unknown"}\n" +
