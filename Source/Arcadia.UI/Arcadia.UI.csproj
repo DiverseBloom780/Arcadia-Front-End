@@ -22,8 +22,5 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
   </ItemGroup>
 
-  <!-- Copy settings.json to output directory -->
-  <ItemGroup>
-    <None Include="settings.json" CopyToOutputDirectory="PreserveNewest" />
-  </ItemGroup>
+
 </Project>
