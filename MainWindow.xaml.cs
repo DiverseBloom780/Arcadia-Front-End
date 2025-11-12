@@ -139,18 +139,6 @@ namespace Arcadia.UI
                     _games.Add(game);
                 }
             }
-
-            // Scan TeknoParrot
-            var teknoParrotIntegration = new TeknoParrotIntegration();
-            if (teknoParrotIntegration.IsTeknoParrotInstalled())
-            {
-                var teknoParrotGames = teknoParrotIntegration.DetectInstalledGames();
-                foreach (var game in teknoParrotGames)
-                {
-                    _gameDatabase.AddGame(game);
-                    _games.Add(game);
-                }
-            }
         }
 
         private void RenderGameWheel()
