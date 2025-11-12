@@ -11,22 +11,20 @@ namespace Arcadia.UI.Tabs
 {
     public partial class UpdaterTab : UserControl
     {
-        private readonly GitHubUpdater _gitHubUpdater;
-        private readonly SettingsManager _settingsManager;
+        private readonly GitHubUpdater? _gitHubUpdater;
+        private readonly SettingsManager? _settingsManager;
 
-        public UpdaterTab(GitHubUpdater gitHubUpdater, SettingsManager settingsManager)
+        public UpdaterTab(GitHubUpdater? gitHubUpdater, SettingsManager? settingsManager)
         {
             InitializeComponent();
             _gitHubUpdater = gitHubUpdater;
             _settingsManager = settingsManager;
-            
-            CurrentVersionText.Text = _settingsManager.Settings?.General.Version ?? "Unknown";
+
+            CurrentVersionText.Text = _settingsManager?.Settings?.General.Version ?? "Unknown";
         }
-        
-        // Safety parameterless constructor if needed by XAML preview
-        public UpdaterTab() : this(null, null)
-        {
-        }
+
+        // Parameterless constructor for XAML designer
+        public UpdaterTab() : this(null, null) { }
 
         private async void CheckForUpdates_Click(object sender, RoutedEventArgs e)
         {
@@ -38,10 +36,10 @@ namespace Arcadia.UI.Tabs
 
             StatusText.Text = "Checking for updates...";
             ReleaseInfoText.Text = "";
-            
+
             try
             {
-                var updateInfo = await Task.Run(() => _gitHubUpdater.CheckForUpdatesAsync());
+                var updateInfo = await _gitHubUpdater.CheckForUpdatesAsync();
 
                 if (updateInfo != null)
                 {
@@ -51,7 +49,7 @@ namespace Arcadia.UI.Tabs
                 else
                 {
                     StatusText.Text = "You are running the latest version.";
-                    ReleaseInfoText.Text = $"Version {_settingsManager.Settings.General.Version} is up to date.";
+                    ReleaseInfoText.Text = $"Version {_settingsManager?.Settings?.General.Version ?? "Unknown"} is up to date.";
                 }
             }
             catch (Exception ex)
@@ -70,7 +68,7 @@ namespace Arcadia.UI.Tabs
             }
             catch (Exception ex)
             {
-                System.Windows.MessageBox.Show($"Could not open link: {ex.Message}", "Navigation Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Could not open link: {ex.Message}", "Navigation Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }
