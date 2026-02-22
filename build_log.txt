@@ -1,0 +1,14 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  Arcadia.Core -> g:\Arcadia\Source\Arcadia.Core\bin\Debug\net8.0-windows\Arcadia.Core.dll
+  Arcadia.Launchers -> g:\Arcadia\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\Arcadia.Launchers.dll
+  Arcadia.Updater -> g:\Arcadia\Source\Arcadia.Updater\bin\Debug\net8.0-windows\Arcadia.Updater.dll
+g:\Arcadia\Source\Arcadia.UI\Controls\GameWheel.xaml.cs(316,27): error CS0111: Type 'GameWheel' already defines a member called 'CreateWheelItem' with the same parameter types [g:\Arcadia\Source\Arcadia.UI\Arcadia.UI_cpemcs00_wpftmp.csproj]
+
+Build FAILED.
+
+g:\Arcadia\Source\Arcadia.UI\Controls\GameWheel.xaml.cs(316,27): error CS0111: Type 'GameWheel' already defines a member called 'CreateWheelItem' with the same parameter types [g:\Arcadia\Source\Arcadia.UI\Arcadia.UI_cpemcs00_wpftmp.csproj]
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.97

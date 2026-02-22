@@ -1,0 +1,81 @@
+{
+  "General": {
+    "ApplicationName": "Arcadia",
+    "Version": "1.0.0",
+    "StartFullscreen": true,
+    "CheckForUpdatesOnStartup": true
+  },
+  "UI": {
+    "WheelOrientation": "Vertical",
+    "Theme": "Dark",
+    "ShowVideoBackgrounds": true,
+    "AnimationSpeed": 1.0,
+    "ShowGameStats": true
+  },
+  "GameLibrary": {
+    "DatabasePath": "%AppData%\\Arcadia\\games.db",
+    "MediaCachePath": "%AppData%\\Arcadia\\Media",
+    "AutoScanOnStartup": true,
+    "ScanSteam": true,
+    "ScanGOG": true,
+    "ScanEpicGames": true,
+    "ScanTeknoParrot": false
+  },
+  "Emulators": {
+    "EmulatorConfigPath": "%AppData%\\Arcadia\\Emulators",
+    "AutoDownloadEmulators": false,
+    "BiosPath": "%AppData%\\Arcadia\\BIOS"
+  },
+  "TeknoParrot": {
+    "TeknoParrotPath": "C:\\TeknoParrot",
+    "RomsFolderPath": "C:\\TeknoParrot\\ROMs",
+    "GameProfilesPath": "C:\\TeknoParrot\\GameProfiles",
+    "AutoGenerateProfiles": true,
+    "AutoDetectDevices": true,
+    "EnableForceFeeback": true
+  },
+  "Media": {
+    "AutoDownloadMedia": true,
+    "DownloadBoxArt": true,
+    "DownloadLogos": true,
+    "DownloadCartArt": true,
+    "DownloadFanArt": true,
+    "DownloadVideoPreview": true,
+    "PreferredImageFormat": "PNG",
+    "MaxImageWidth": 1920,
+    "MaxImageHeight": 1080
+  },
+  "UpdateSettings": {
+    "GitHubOwner": "DiverseBloom780",
+    "GitHubRepository": "Arcadia-Front-End",
+    "CheckForUpdatesOnStartup": true,
+    "AutoDownloadUpdates": false,
+    "ShowChangelog": true
+  },
+  "SmartWizard": {
+    "Enabled": true,
+    "LocalMode": true,
+    "KnowledgeBasePath": "%AppData%\\Arcadia\\SmartWizard"
+  },
+  "Input": {
+    "KeyboardEnabled": true,
+    "GamepadEnabled": true,
+    "GamepadIndex": 0,
+    "NavigateUpKey": "Up",
+    "NavigateDownKey": "Down",
+    "NavigateLeftKey": "Left",
+    "NavigateRightKey": "Right",
+    "LaunchKey": "Enter",
+    "BackKey": "Escape",
+    "SettingsKey": "F1",
+    "SearchKey": "F2",
+    "SmartWizardKey": "F3"
+  },
+  "Advanced": {
+    "EnableLogging": true,
+    "LogLevel": "Info",
+    "LogPath": "%AppData%\\Arcadia\\Logs",
+    "EnableTelemetry": false,
+    "CacheSizeLimit": 10240
+  }
+}

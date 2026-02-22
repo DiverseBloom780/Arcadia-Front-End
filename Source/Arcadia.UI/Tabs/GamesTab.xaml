@@ -1,0 +1,80 @@
+<UserControl x:Class="Arcadia.UI.Tabs.GamesTab"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:controls="clr-namespace:Arcadia.UI.Controls"
+             Background="Black">
+    <Grid>
+        <!-- Background Video -->
+        <MediaElement x:Name="BackgroundVideo" 
+                      LoadedBehavior="Manual" 
+                      UnloadedBehavior="Stop"
+                      Stretch="UniformToFill"
+                      Opacity="0.8"/>
+
+        <!-- Gradient Overlay for readability -->
+        <Rectangle>
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="#CC000000" Offset="0"/>
+                    <GradientStop Color="#00000000" Offset="0.5"/>
+                    <GradientStop Color="#CC000000" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <!-- Game Info / Logo -->
+        <Grid HorizontalAlignment="Left" VerticalAlignment="Center" Margin="100,0,0,0" Width="800">
+            <StackPanel>
+                <TextBlock x:Name="SystemTitle" FontSize="20" FontWeight="Bold" Foreground="#00D9FF" Visibility="Collapsed"/>
+                <Image x:Name="GameLogo" Height="300" Stretch="Uniform" HorizontalAlignment="Left"/>
+                <TextBlock x:Name="GameTitle" FontSize="48" FontWeight="Bold" Foreground="White" Margin="0,20,0,0"/>
+                <TextBlock x:Name="GameInfo" FontSize="20" Foreground="#AAA" TextWrapping="Wrap" Margin="0,10,0,0"/>
+            </StackPanel>
+        </Grid>
+
+        <!-- Selection Pointer -->
+        <Path x:Name="SelectionPointer" 
+              Data="M 0,0 L 20,10 L 0,20 Z" 
+              Fill="Cyan" 
+              HorizontalAlignment="Right" 
+              VerticalAlignment="Center" 
+              Margin="0,0,420,0"
+              Width="20" Height="20"
+              Stretch="Fill">
+            <Path.RenderTransform>
+                <TranslateTransform x:Name="PointerTranslate"/>
+            </Path.RenderTransform>
+            <Path.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard>
+                        <Storyboard RepeatBehavior="Forever">
+                            <DoubleAnimation Storyboard.TargetName="PointerTranslate" 
+                                             Storyboard.TargetProperty="X"
+                                             From="0" To="-10" Duration="0:0:0.5" 
+                                             AutoReverse="True"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Path.Triggers>
+        </Path>
+
+        <!-- A-Z Jump Overlay -->
+        <Border x:Name="JumpOverlay" 
+                Width="150" Height="150" 
+                Background="#CC000000" 
+                CornerRadius="75" 
+                Visibility="Collapsed"
+                HorizontalAlignment="Center" VerticalAlignment="Center"
+                BorderBrush="Cyan" BorderThickness="4">
+            <TextBlock x:Name="JumpLetter" 
+                       Text="A" 
+                       Foreground="White" 
+                       FontSize="80" 
+                       FontWeight="Bold" 
+                       HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Border>
+
+        <!-- The Game Wheel -->
+        <controls:GameWheel x:Name="Wheel" HorizontalAlignment="Right" Width="400"/>
+    </Grid>
+</UserControl>

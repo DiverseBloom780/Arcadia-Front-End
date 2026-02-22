@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arcadia.UI", "Arcadia.UI.csproj", "{51AAE8C7-38CF-0560-0AFC-6ADEC2F5950F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51AAE8C7-38CF-0560-0AFC-6ADEC2F5950F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51AAE8C7-38CF-0560-0AFC-6ADEC2F5950F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51AAE8C7-38CF-0560-0AFC-6ADEC2F5950F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51AAE8C7-38CF-0560-0AFC-6ADEC2F5950F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8AAE64A7-3AFC-472C-9D7C-C2D24597E25A}
+	EndGlobalSection
+EndGlobal

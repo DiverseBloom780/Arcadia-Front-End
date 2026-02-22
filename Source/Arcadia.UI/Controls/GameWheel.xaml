@@ -1,0 +1,15 @@
+<UserControl x:Class="Arcadia.UI.Controls.GameWheel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1080" d:DesignWidth="400"
+             Focusable="True">
+    
+    <Grid x:Name="MainGrid">
+        <Canvas x:Name="WheelCanvas" Background="Transparent" HorizontalAlignment="Right" Width="400">
+            <!-- Items will be dynamically added and positioned here -->
+        </Canvas>
+    </Grid>
+</UserControl>
