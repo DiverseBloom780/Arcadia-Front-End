@@ -1,5 +1,0 @@
-<UserControl x:Class="Arcadia.UI.GameWheelUI"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <!-- XAML markup for the GameWheelUI component -->
-</UserControl>
