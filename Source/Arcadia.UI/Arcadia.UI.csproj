@@ -2,28 +2,42 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
+    <!-- Align with Arcadia.Core to resolve architecture mismatch for SQLite support -->
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <Platforms>x64</Platforms>
+    <PlatformTarget>x64</PlatformTarget>
     <Nullable>enable</Nullable>
-    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
     <UseWindowsForms>true</UseWindowsForms>
-    <LangVersion>latest</LangVersion>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SharpDX.Direct3D11" Version="4.2.0" />
+    <PackageReference Include="SharpDX.D3DCompiler" Version="4.2.0" />
+    <PackageReference Include="SharpDX.XInput" Version="4.2.0" />
+    <PackageReference Include="SharpDX.Mathematics" Version="4.2.0" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Arcadia.Core\Arcadia.Core.csproj" />
     <ProjectReference Include="..\Arcadia.Launchers\Arcadia.Launchers.csproj" />
+    <ProjectReference Include="..\Arcadia.Media\Arcadia.Media.csproj" />
     <ProjectReference Include="..\Arcadia.Updater\Arcadia.Updater.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="SharpDX" Version="4.2.0" />
-    <PackageReference Include="SharpDX.Direct3D11" Version="4.2.0" />
-    <PackageReference Include="SharpDX.DXGI" Version="4.2.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <Compile Include="..\..\D3DRenderHost.cs" Link="Rendering\D3DRenderHost.cs" />
+    <Compile Include="..\..\TextureCache.cs" Link="Rendering\TextureCache.cs" />
+    <Compile Include="..\..\InputManager.cs" Link="Input\InputManager.cs" />
+    <Compile Include="..\..\WheelRenderer.cs" Link="Rendering\WheelRenderer.cs" />
+    <Compile Include="..\..\PluginLoader.cs" Link="Plugins\PluginLoader.cs" />
+    <Compile Include="..\..\GameWheelViewModel.cs" Link="ViewModels\GameWheelViewModel.cs" />
+    <None Include="..\..\Shaders.hlsl" Link="Shaders.hlsl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
-  <!-- Copy settings.json to output directory -->
   <ItemGroup>
-    <None Include="settings.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 </Project>

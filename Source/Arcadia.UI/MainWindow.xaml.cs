@@ -1,156 +1,159 @@
 using System;
-using System.Collections.Generic;
-using System.IO; 
-using System.Linq;
-using System.Threading.Tasks; 
 using System.Windows;
-using System.Windows.Controls; 
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Threading;
+using Arcadia.UI.ViewModels;
+using Arcadia.UI.Rendering;
+using Arcadia.UI.Input;
 using Arcadia.Core.Models;
 using Arcadia.Core.Services;
-using Arcadia.Updater;
-
-// Mandatory import for tab components
-using Arcadia.UI.Tabs; 
+using Arcadia.UI.Services;
+using SharpDX.D3DCompiler;
 
 namespace Arcadia.UI
 {
     public partial class MainWindow : Window
     {
-        private SettingsManager _settingsManager = null!;
-        private GitHubUpdater? _gitHubUpdater;
-        private List<Game> _games = new List<Game>();
-        private DispatcherTimer _clockTimer = null!;
+        private readonly GameWheelViewModel _viewModel;
+        private readonly SmartWizardService _wizard;
+        private readonly D3DRenderHost _renderHost;
+        private readonly WheelRenderer _renderer;
+        private readonly TextureCache _textureCache;
+        private readonly Arcadia.UI.Input.InputManager _inputManager;
+        private readonly SettingsManager _settingsManager;
 
-        public MainWindow()
+        public MainWindow(GameWheelViewModel viewModel, SmartWizardService wizard, GameLauncher launcher, SettingsManager settingsManager)
         {
             InitializeComponent();
-            
-            InitializeServices();
-            InitializeClock();
-            
-            LoadGames(); 
-            
-            // Set initial view to GamesTab, passing dependency
-            SwitchTab(new GamesTab(_games)); 
-        }
+            _viewModel = viewModel;
+            _wizard = wizard;
+            _settingsManager = settingsManager;
+            DataContext = _viewModel;
 
-        private void InitializeServices()
-        {
-            string appDataPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Arcadia");
-            Directory.CreateDirectory(appDataPath);
-            
-            string settingsPath = Path.Combine(appDataPath, "settings.json");
-            
-            _settingsManager = new SettingsManager(settingsPath);
-            
-            // Initialize GitHubUpdater if update settings are configured
-            if (_settingsManager.Settings?.UpdateSettings != null)
+            // Setup Rendering
+            _renderHost = new D3DRenderHost(1920, 1080);
+            if (D3DSurface != null && _renderHost != null)
             {
-                _gitHubUpdater = new GitHubUpdater(
-                    _settingsManager.Settings.UpdateSettings.GitHubOwner,
-                    _settingsManager.Settings.UpdateSettings.GitHubRepository,
-                    _settingsManager.Settings.General.Version
-                );
+                D3DSurface.Source = _renderHost.ImageSource;
             }
-        }
-
-        private void InitializeClock()
-        {
-            _clockTimer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
-            _clockTimer.Tick += (s, e) => ClockText.Text = DateTime.Now.ToString("HH:mm:ss");
-            _clockTimer.Start();
-            ClockText.Text = DateTime.Now.ToString("HH:mm:ss");
-        }
-
-        private async void LoadGames() 
-        { 
-            // Show loading overlay
-            LoadingOverlay.Visibility = Visibility.Visible;
             
-            try
+            _renderer = new WheelRenderer();
+            _textureCache = new TextureCache(_renderHost!.Device);
+
+            InitializeShaders();
+            UpdateWheelSettings();
+
+            // Setup Input
+            _inputManager = new Arcadia.UI.Input.InputManager(_viewModel);
+
+            CompositionTarget.Rendering += OnCompositionRendering;
+            Loaded += OnLoaded;
+        }
+
+        private async void OnLoaded(object sender, RoutedEventArgs e)
+        {
+            // If library is empty, it's likely first run. 
+            // Automatically introduce the user to Arcadia's privacy principles.
+            if (_viewModel != null && _viewModel.Games.Count == 0)
             {
-                // TODO: Implement actual game loading from database
-                _games = await Task.Run(() => 
+                ShowWizard();
+                string response = await _wizard.ProcessCommandAsync("about");
+                if (TerminalHistory != null && !string.IsNullOrEmpty(response))
                 {
-                    // Placeholder: Return empty list for now
-                    // When GameDatabase is implemented, use:
-                    // return _gameDatabase.GetAllGames();
-                    return new List<Game>();
-                });
-                
-                // Refresh the current tab if it's showing games
-                if (ContentArea.Children.Count > 0 && ContentArea.Children[0] is GamesTab)
-                {
-                    SwitchTab(new GamesTab(_games));
+                    TerminalHistory.Text += $"\n{response}";
                 }
             }
-            catch (Exception ex)
+        }
+
+        private void InitializeShaders()
+        {
+            // Compile HLSL for the GPU
+            using var vsByteCode = ShaderBytecode.CompileFromFile("Shaders.hlsl", "VS", "vs_4_0");
+            using var psByteCode = ShaderBytecode.CompileFromFile("Shaders.hlsl", "PS", "ps_4_0");
+            
+            if (vsByteCode?.Bytecode != null && psByteCode?.Bytecode != null && _renderHost != null)
             {
-                MessageBox.Show($"Error loading games: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-            finally
-            {
-                // Hide loading overlay
-                LoadingOverlay.Visibility = Visibility.Collapsed;
+                _renderer.Initialize(_renderHost.Device, vsByteCode.Bytecode, psByteCode.Bytecode);
             }
         }
 
-        // ====================================================================
-        // NAVIGATION METHODS
-        // ====================================================================
-
-        private void SwitchTab(UserControl newTab)
+        private void OnCompositionRendering(object? sender, EventArgs e)
         {
-            if (ContentArea.Children.Count > 0)
+            _renderHost?.Render((context, rtv) =>
             {
-                ContentArea.Children.Clear();
-            }
-            ContentArea.Children.Add(newTab);
+                context.ClearRenderTargetView(rtv, new SharpDX.Color4(0, 0, 0, 0));
+                _renderer.Render(context, _viewModel.CurrentScrollOffset, _viewModel.Games, _textureCache);
+            });
         }
 
-        private void GamesButton_Click(object sender, RoutedEventArgs e)
+        private void OnKeyDown(object sender, System.Windows.Input.KeyEventArgs e)
         {
-            SwitchTab(new GamesTab(_games)); 
-        }
-        
-        private void LibraryButton_Click(object sender, RoutedEventArgs e)
-        {
-            SwitchTab(new LibraryTab(_games));
-        }
-        
-        private void SettingsButton_Click(object sender, RoutedEventArgs e)
-        {
-            SwitchTab(new SettingsTab(_settingsManager));
-        }
-        
-        private void UpdaterButton_Click(object sender, RoutedEventArgs e)
-        {
-            SwitchTab(new UpdaterTab(_gitHubUpdater, _settingsManager));
-        }
-        
-        private void Window_KeyDown(object sender, KeyEventArgs e)
-        {
-            // Handle keyboard shortcuts
-            switch (e.Key)
+            if (SmartWizardOverlay.Visibility == Visibility.Visible) return;
+
+            if (e.Key == Key.F3)
             {
-                case Key.F1:
-                    SettingsButton_Click(sender, new RoutedEventArgs());
-                    break;
-                case Key.F2:
-                    // TODO: Implement search functionality
-                    break;
-                case Key.Escape:
-                    // Close application or return to previous screen
-                    if (MessageBox.Show("Exit Arcadia?", "Confirm Exit", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
-                    {
-                        Application.Current.Shutdown();
-                    }
-                    break;
+                ShowWizard();
+                return;
             }
+
+            _viewModel.HandleKeyDown(e.Key);
+        }
+
+        private void ShowWizard()
+        {
+            if (SmartWizardOverlay != null) SmartWizardOverlay.Visibility = Visibility.Visible;
+            TerminalInput?.Focus();
+            if (TerminalHistory != null) TerminalHistory.Text = "ARCADIA SMART WIZARD [V1.0]\nType 'about' for info or 'help' for commands.\n---------------------------";
+        }
+
+        private async void OnTerminalKeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            if (e.Key == Key.Escape)
+            {
+                if (SmartWizardOverlay != null) SmartWizardOverlay.Visibility = Visibility.Collapsed;
+                return;
+            }
+
+            if (e.Key == Key.Enter)
+            {
+                string input = TerminalInput?.Text?.Trim() ?? string.Empty;
+                TerminalInput?.Clear();
+                
+                if (TerminalHistory != null) { TerminalHistory.Text += $"\n> {input}"; }
+                string? response = await (_wizard?.ProcessCommandAsync(input) ?? Task.FromResult("Error: Wizard not initialized."));
+                if (TerminalHistory != null && !string.IsNullOrEmpty(response)) { TerminalHistory.Text += $"\n{response}"; }
+                
+                // Auto-refresh wheel if customization commands were used
+                if (input.StartsWith("set-wheel") || input.StartsWith("set-tilt") || 
+                    input.StartsWith("set-radius") || input.StartsWith("set-spacing") ||
+                    input.StartsWith("set-linear") || input.StartsWith("set-x") ||
+                    input.StartsWith("set-y") || input.StartsWith("set-logo-size") ||
+                    input.StartsWith("set-accent"))
+                {
+                    UpdateWheelSettings();
+                }
+            }
+        }
+
+        private void UpdateWheelSettings()
+        {
+            var s = _settingsManager.Settings;
+            if (Enum.TryParse<WheelMode>(s.WheelOrientation, true, out var mode))
+                _renderer.CurrentMode = mode;
+
+            _renderer.TiltAngle = s.TiltAngle;
+            _renderer.WheelRadius = s.WheelRadius;
+            _renderer.ItemSpacing = s.ItemSpacing;
+            _renderer.LinearSpacing = s.LinearSpacing;
+            _renderer.WheelXOffset = s.WheelXOffset;
+            _renderer.WheelYOffset = s.WheelYOffset;
+            _renderer.LogoWidth = s.LogoWidth;
+            _renderer.LogoHeight = s.LogoHeight;
+
+            try {
+                var color = (Color)ColorConverter.ConvertFromString(s.AccentColor);
+                _renderer.AccentColor = new SharpDX.Color4(color.R / 255f, color.G / 255f, color.B / 255f, color.A / 255f);
+            } catch { _renderer.AccentColor = SharpDX.Color4.White; }
         }
     }
 }

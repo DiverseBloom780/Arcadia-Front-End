@@ -1,0 +1,19 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  Arcadia.Core -> G:\MyProjects\Arcadia\Source\Arcadia.Core\bin\Debug\net8.0-windows\Arcadia.Core.dll
+  Arcadia.Media -> G:\MyProjects\Arcadia\Source\Arcadia.Media\bin\Debug\net8.0-windows\Arcadia.Media.dll
+  Arcadia.Emulators -> G:\MyProjects\Arcadia\Source\Arcadia.Emulators\bin\Debug\net8.0-windows\Arcadia.Emulators.dll
+  Arcadia.SmartWizard -> G:\MyProjects\Arcadia\Source\Arcadia.SmartWizard\bin\Debug\net8.0-windows\Arcadia.SmartWizard.dll
+  Arcadia.Launchers -> G:\MyProjects\Arcadia\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\Arcadia.Launchers.dll
+  Arcadia.Updater -> G:\MyProjects\Arcadia\Source\Arcadia.Updater\bin\Debug\net8.0-windows\Arcadia.Updater.dll
+G:\MyProjects\Arcadia\Source\Arcadia.UI\Tabs\GamesTab.xaml.cs(26,26): error CS0246: The type or namespace name 'GameLauncher' could not be found (are you missing a using directive or an assembly reference?) [G:\MyProjects\Arcadia\Source\Arcadia.UI\Arcadia.UI_utcswtyz_wpftmp.csproj]
+G:\MyProjects\Arcadia\Source\Arcadia.UI\Tabs\GamesTab.xaml.cs(28,43): error CS0246: The type or namespace name 'GameLauncher' could not be found (are you missing a using directive or an assembly reference?) [G:\MyProjects\Arcadia\Source\Arcadia.UI\Arcadia.UI_utcswtyz_wpftmp.csproj]
+
+Build FAILED.
+
+G:\MyProjects\Arcadia\Source\Arcadia.UI\Tabs\GamesTab.xaml.cs(26,26): error CS0246: The type or namespace name 'GameLauncher' could not be found (are you missing a using directive or an assembly reference?) [G:\MyProjects\Arcadia\Source\Arcadia.UI\Arcadia.UI_utcswtyz_wpftmp.csproj]
+G:\MyProjects\Arcadia\Source\Arcadia.UI\Tabs\GamesTab.xaml.cs(28,43): error CS0246: The type or namespace name 'GameLauncher' could not be found (are you missing a using directive or an assembly reference?) [G:\MyProjects\Arcadia\Source\Arcadia.UI\Arcadia.UI_utcswtyz_wpftmp.csproj]
+    0 Warning(s)
+    2 Error(s)
+
+Time Elapsed 00:00:01.33

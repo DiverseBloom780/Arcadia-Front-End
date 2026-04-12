@@ -1,63 +1,50 @@
-using System;
 using System.IO;
-using Newtonsoft.Json;
+using System.Text.Json;
 using Arcadia.Core.Models;
 
 namespace Arcadia.Core.Services
 {
     public class SettingsManager
     {
-        private readonly string _settingsFilePath;
+        private readonly string _settingsPath;
+        public AppSettings Settings { get; private set; } = new AppSettings();
 
-        public AppSettings Settings { get; private set; }
-
-        public SettingsManager(string settingsFilePath)
+        public SettingsManager(string settingsPath)
         {
-            _settingsFilePath = settingsFilePath;
-            Settings = LoadSettings();
+            _settingsPath = settingsPath;
+            Settings = new AppSettings();
+            LoadSettings();
         }
 
-        private AppSettings LoadSettings()
+        public void LoadSettings()
         {
-            try
+            if (File.Exists(_settingsPath))
             {
-                if (File.Exists(_settingsFilePath))
+                try
                 {
-                    string json = File.ReadAllText(_settingsFilePath);
-                    return JsonConvert.DeserializeObject<AppSettings>(json) ?? new AppSettings();
+                    string json = File.ReadAllText(_settingsPath);
+                    Settings = JsonSerializer.Deserialize<AppSettings>(json) ?? new AppSettings();
+                }
+                catch
+                {
+                    Settings = new AppSettings();
                 }
             }
-            catch (Exception ex)
+            else
             {
-                // Optional: log error or fallback
-                Console.WriteLine($"Error loading settings: {ex.Message}");
+                Settings = new AppSettings();
+                SaveSettings();
             }
-
-            return new AppSettings();
         }
 
         public void SaveSettings()
         {
             try
             {
-                string json = JsonConvert.SerializeObject(Settings, Formatting.Indented);
-                var directory = Path.GetDirectoryName(_settingsFilePath);
-                if (!string.IsNullOrEmpty(directory) && !Directory.Exists(directory))
-                {
-                    Directory.CreateDirectory(directory);
-                }
-
-                File.WriteAllText(_settingsFilePath, json);
+                string json = JsonSerializer.Serialize(Settings, new JsonSerializerOptions { WriteIndented = true });
+                File.WriteAllText(_settingsPath, json);
             }
-            catch (Exception ex)
-            {
-                throw new InvalidOperationException("Failed to save settings.", ex);
-            }
-        }
-
-        public void ResetSettings()
-        {
-            Settings = new AppSettings();
+            catch { }
         }
     }
 }
