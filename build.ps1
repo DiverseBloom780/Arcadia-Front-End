@@ -3,7 +3,7 @@
 
 param(
     [string]$Configuration = "Release",
-    [string]$OutputPath = "$PSScriptRoot\..\Build",
+    [string]$OutputPath = "$PSScriptRoot\Build",
     [switch]$Package = $false
 )
 
@@ -13,7 +13,7 @@ Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
 
 # Set paths
-$SolutionPath = "$PSScriptRoot\..\Arcadia.sln"
+$SolutionPath = "$PSScriptRoot\Arcadia.sln"
 $PublishPath = Join-Path $OutputPath "Publish"
 $PackagePath = Join-Path $OutputPath "Package"
 
@@ -43,7 +43,7 @@ if ($LASTEXITCODE -ne 0) {
 
 # Publish application
 Write-Host "Publishing application..." -ForegroundColor Yellow
-dotnet publish "..\Source\Arcadia.UI\Arcadia.UI.csproj" `
+dotnet publish "$PSScriptRoot\Source\Arcadia.UI\Arcadia.UI.csproj" `
     --configuration $Configuration `
     --output $PublishPath `
     --self-contained true `
@@ -57,9 +57,13 @@ if ($LASTEXITCODE -ne 0) {
 
 # Copy additional files
 Write-Host "Copying additional files..." -ForegroundColor Yellow
-Copy-Item -Path "..\Config" -Destination $PublishPath -Recurse -Force
-Copy-Item -Path "..\Assets" -Destination $PublishPath -Recurse -Force
-Copy-Item -Path "..\README.md" -Destination $PublishPath -Force
+if (Test-Path "$PSScriptRoot\Config") {
+    Copy-Item -Path "$PSScriptRoot\Config" -Destination $PublishPath -Recurse -Force
+}
+if (Test-Path "$PSScriptRoot\Assets") {
+    Copy-Item -Path "$PSScriptRoot\Assets" -Destination $PublishPath -Recurse -Force
+}
+Copy-Item -Path "$PSScriptRoot\README.md" -Destination $PublishPath -Force
 
 # Create package if requested
 if ($Package) {

@@ -8,8 +8,12 @@ namespace Arcadia.Core.Services
     public class SettingsManager
     {
         private readonly string _settingsFilePath;
+<<<<<<< HEAD
 
         public AppSettings Settings { get; private set; }
+=======
+        public AppSettings Settings { get; private set; } = new AppSettings();
+>>>>>>> 282f32e (Overhaul Arcadia frontend and filter redistributables)
 
         public SettingsManager(string settingsFilePath)
         {

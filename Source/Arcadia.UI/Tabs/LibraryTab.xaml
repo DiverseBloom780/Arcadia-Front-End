@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <UserControl x:Class="Arcadia.UI.Tabs.LibraryTab"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -36,3 +37,82 @@
         </StackPanel>
     </Grid>
 </UserControl>
+=======
+<UserControl x:Class="Arcadia.UI.Tabs.LibraryTab"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Background="#111">
+    <Grid Margin="40">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="0,0,0,20">
+            <TextBlock Text="Game Library" Style="{StaticResource HeaderTextStyle}"/>
+            <TextBlock Text="Manage your collection and add standalone titles manually." Style="{StaticResource SubHeaderTextStyle}"/>
+        </StackPanel>
+
+        <!-- Search and Actions Bar -->
+        <Grid Grid.Row="1" Margin="0,0,0,30">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            
+            <Border Background="#1AFFFFFF" CornerRadius="8" Padding="15,10" BorderBrush="{StaticResource GlassBorderBrush}" BorderThickness="1">
+                <Grid>
+                    <TextBlock x:Name="SearchPlaceholder" Text="Search games..." Foreground="#666" IsHitTestVisible="False" Visibility="Visible"/>
+                    <TextBox x:Name="SearchBox" Background="Transparent" BorderThickness="0" Foreground="White" FontSize="16" CaretBrush="White" TextChanged="SearchBox_TextChanged" GotFocus="SearchBox_GotFocus" LostFocus="SearchBox_LostFocus"/>
+                </Grid>
+            </Border>
+
+            <Button Grid.Column="1" Content="+ ADD MANUAL GAME" Style="{StaticResource AccentButtonStyle}" Margin="20,0,0,0" Padding="25,10" Click="AddManualGame_Click"/>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Game List -->
+            <ListView x:Name="GameListView" 
+                      SelectionChanged="GameListView_SelectionChanged"
+                      Background="Transparent"
+                      BorderThickness="0"
+                      ItemContainerStyle="{StaticResource SidebarButtonStyle}"
+                      ScrollViewer.VerticalScrollBarVisibility="Auto">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Padding="10">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{Binding Title}" FontSize="18" VerticalAlignment="Center"/>
+                                <TextBlock Text="{Binding Platform}" FontSize="12" Foreground="#666" Margin="15,0,0,0" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <!-- Selected Game Details -->
+            <Border Grid.Column="1" Style="{StaticResource GlassCardStyle}" Margin="30,0,0,0" VerticalAlignment="Top">
+                <StackPanel>
+                    <Border Height="200" Background="#111" CornerRadius="8" Margin="0,0,0,20">
+                        <TextBlock Text="No Preview" Foreground="#444" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Border>
+                    <TextBlock x:Name="SelectedGameTitle" Text="Select a game" Style="{StaticResource HeaderTextStyle}" FontSize="24"/>
+                    <TextBlock x:Name="SelectedGameInfo" Text="" Style="{StaticResource SubHeaderTextStyle}" TextWrapping="Wrap" Margin="0,0,0,20"/>
+                    
+                    <Button Content="EDIT METADATA" Style="{StaticResource PremiumButtonStyle}" HorizontalAlignment="Stretch" Margin="0,0,0,10" Click="EditMetadata_Click"/>
+                    <Button Content="LAUNCH GAME" Style="{StaticResource AccentButtonStyle}" HorizontalAlignment="Stretch"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>
+>>>>>>> 282f32e (Overhaul Arcadia frontend and filter redistributables)

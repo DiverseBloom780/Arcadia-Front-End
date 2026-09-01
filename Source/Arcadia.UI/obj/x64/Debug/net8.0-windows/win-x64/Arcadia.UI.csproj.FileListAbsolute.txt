@@ -1,0 +1,194 @@
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.csproj.AssemblyReference.cache
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Controls\GameWheelControl.baml
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\MainWindow.baml
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\LibraryTab.baml
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\SettingsTab.baml
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\SmartWizardTab.baml
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\UpdaterTab.baml
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Themes\DarkTheme.baml
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Themes\PremiumTheme.baml
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\App.baml
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Controls\GameWheelControl.g.cs
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\MainWindow.g.cs
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\GamesTab.g.cs
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\LibraryTab.g.cs
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\SettingsTab.g.cs
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\SmartWizardTab.g.cs
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\UpdaterTab.g.cs
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\App.g.cs
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\GeneratedInternalTypeHelper.g.cs
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI_MarkupCompile.cache
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI_MarkupCompile.lref
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\settings.json
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.exe
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.deps.json
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.runtimeconfig.json
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.dll
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.pdb
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\EntityFramework.SqlServer.dll
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\EntityFramework.dll
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Newtonsoft.Json.dll
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Octokit.dll
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\SharpDX.dll
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\SharpDX.Direct3D11.dll
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\SharpDX.DXGI.dll
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\SharpDX.Mathematics.dll
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\SharpDX.XInput.dll
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\System.Data.SQLite.dll
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\System.Data.SqlClient.dll
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\System.Data.SQLite.EF6.dll
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\sni.dll
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\SQLite.Interop.dll
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.dll
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Launchers.dll
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Media.dll
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.SmartWizard.dll
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Updater.dll
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.pdb
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Launchers.pdb
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Updater.pdb
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Media.pdb
+G:\MyProjects\Arcadia\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.SmartWizard.pdb
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\GamesTab.baml
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.g.resources
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.GeneratedMSBuildEditorConfig.editorconfig
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.AssemblyInfoInputs.cache
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.AssemblyInfo.cs
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.csproj.CoreCompileInputs.cache
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.sourcelink.json
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.csproj.Up2Date
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.dll
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\refint\Arcadia.UI.dll
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.pdb
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.genruntimeconfig.cache
+G:\MyProjects\Arcadia\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\ref\Arcadia.UI.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\settings.json
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.exe
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.deps.json
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.runtimeconfig.json
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.pdb
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\EntityFramework.SqlServer.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\EntityFramework.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Newtonsoft.Json.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Octokit.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\SharpDX.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\SharpDX.Direct3D11.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\SharpDX.DXGI.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\SharpDX.Mathematics.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\SharpDX.XInput.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\System.Data.SQLite.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\System.Data.SqlClient.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\System.Data.SQLite.EF6.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\sni.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\SQLite.Interop.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Launchers.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Media.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.SmartWizard.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Updater.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.pdb
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Launchers.pdb
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Updater.pdb
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Media.pdb
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.SmartWizard.pdb
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.csproj.AssemblyReference.cache
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Controls\GameWheelControl.baml
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\MainWindow.baml
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\LibraryTab.baml
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\SettingsTab.baml
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\SmartWizardTab.baml
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\UpdaterTab.baml
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Themes\DarkTheme.baml
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Themes\PremiumTheme.baml
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\App.baml
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Controls\GameWheelControl.g.cs
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\MainWindow.g.cs
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\GamesTab.g.cs
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\LibraryTab.g.cs
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\SettingsTab.g.cs
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\SmartWizardTab.g.cs
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\UpdaterTab.g.cs
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\App.g.cs
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\GeneratedInternalTypeHelper.g.cs
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI_MarkupCompile.cache
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI_MarkupCompile.lref
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\GamesTab.baml
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.g.resources
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.GeneratedMSBuildEditorConfig.editorconfig
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.AssemblyInfoInputs.cache
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.AssemblyInfo.cs
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.csproj.CoreCompileInputs.cache
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.sourcelink.json
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.csproj.Up2Date
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\refint\Arcadia.UI.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.pdb
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.genruntimeconfig.cache
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\ref\Arcadia.UI.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\settings.json
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\EntityFramework.SqlServer.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\EntityFramework.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Newtonsoft.Json.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Octokit.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\SharpDX.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\SharpDX.Direct3D11.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\SharpDX.DXGI.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\SharpDX.Mathematics.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\SharpDX.XInput.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\System.Data.SQLite.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\System.Data.SqlClient.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\System.Data.SQLite.EF6.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\sni.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\SQLite.Interop.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Launchers.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Media.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.SmartWizard.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Updater.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.pdb
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Launchers.pdb
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Updater.pdb
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Media.pdb
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.SmartWizard.pdb
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.csproj.AssemblyReference.cache
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Controls\GameWheelControl.baml
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\MainWindow.baml
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\LibraryTab.baml
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\SettingsTab.baml
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\SmartWizardTab.baml
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\UpdaterTab.baml
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Themes\DarkTheme.baml
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Themes\PremiumTheme.baml
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\App.baml
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Controls\GameWheelControl.g.cs
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\MainWindow.g.cs
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\GamesTab.g.cs
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\LibraryTab.g.cs
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\SettingsTab.g.cs
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\SmartWizardTab.g.cs
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\UpdaterTab.g.cs
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\App.g.cs
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\GeneratedInternalTypeHelper.g.cs
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\GamesTab.baml
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.AssemblyInfoInputs.cache
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.AssemblyInfo.cs
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.sourcelink.json
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.csproj.Up2Date
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.UI.genruntimeconfig.cache
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\NewsTab.baml
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Tabs\NewsTab.g.cs
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.exe
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.deps.json
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.runtimeconfig.json
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.pdb
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia_MarkupCompile.cache
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia_MarkupCompile.lref
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.g.resources
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\refint\Arcadia.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.pdb
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\x64\Debug\net8.0-windows\win-x64\ref\Arcadia.dll

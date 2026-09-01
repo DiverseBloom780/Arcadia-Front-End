@@ -1,0 +1,45 @@
+G:\MyProjects\Arcadia\Source\Arcadia.Core\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.deps.json
+G:\MyProjects\Arcadia\Source\Arcadia.Core\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.runtimeconfig.json
+G:\MyProjects\Arcadia\Source\Arcadia.Core\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.dll
+G:\MyProjects\Arcadia\Source\Arcadia.Core\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.pdb
+G:\MyProjects\Arcadia\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.csproj.AssemblyReference.cache
+G:\MyProjects\Arcadia\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.GeneratedMSBuildEditorConfig.editorconfig
+G:\MyProjects\Arcadia\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.AssemblyInfoInputs.cache
+G:\MyProjects\Arcadia\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.AssemblyInfo.cs
+G:\MyProjects\Arcadia\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.csproj.CoreCompileInputs.cache
+G:\MyProjects\Arcadia\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.sourcelink.json
+G:\MyProjects\Arcadia\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.dll
+G:\MyProjects\Arcadia\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\refint\Arcadia.Core.dll
+G:\MyProjects\Arcadia\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.pdb
+G:\MyProjects\Arcadia\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.genruntimeconfig.cache
+G:\MyProjects\Arcadia\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\ref\Arcadia.Core.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Core\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.deps.json
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Core\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.runtimeconfig.json
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Core\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Core\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.pdb
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.csproj.AssemblyReference.cache
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.GeneratedMSBuildEditorConfig.editorconfig
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.AssemblyInfoInputs.cache
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.AssemblyInfo.cs
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.csproj.CoreCompileInputs.cache
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.sourcelink.json
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\refint\Arcadia.Core.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.pdb
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.genruntimeconfig.cache
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\ref\Arcadia.Core.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Core\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.deps.json
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Core\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.runtimeconfig.json
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Core\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Core\bin\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.pdb
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.csproj.AssemblyReference.cache
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.AssemblyInfoInputs.cache
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.AssemblyInfo.cs
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.sourcelink.json
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\refint\Arcadia.Core.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.pdb
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\Arcadia.Core.genruntimeconfig.cache
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Core\obj\x64\Debug\net8.0-windows\win-x64\ref\Arcadia.Core.dll

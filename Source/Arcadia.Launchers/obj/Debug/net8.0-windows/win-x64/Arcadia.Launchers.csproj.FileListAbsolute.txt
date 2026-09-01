@@ -1,0 +1,54 @@
+G:\MyProjects\Arcadia\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\win-x64\Arcadia.Launchers.deps.json
+G:\MyProjects\Arcadia\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\win-x64\Arcadia.Launchers.dll
+G:\MyProjects\Arcadia\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\win-x64\Arcadia.Launchers.pdb
+G:\MyProjects\Arcadia\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\win-x64\Arcadia.Core.dll
+G:\MyProjects\Arcadia\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\win-x64\Arcadia.Core.pdb
+G:\MyProjects\Arcadia\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.csproj.AssemblyReference.cache
+G:\MyProjects\Arcadia\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.GeneratedMSBuildEditorConfig.editorconfig
+G:\MyProjects\Arcadia\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.AssemblyInfoInputs.cache
+G:\MyProjects\Arcadia\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.AssemblyInfo.cs
+G:\MyProjects\Arcadia\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.csproj.CoreCompileInputs.cache
+G:\MyProjects\Arcadia\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.sourcelink.json
+G:\MyProjects\Arcadia\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia..8813EFAF.Up2Date
+G:\MyProjects\Arcadia\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.dll
+G:\MyProjects\Arcadia\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\refint\Arcadia.Launchers.dll
+G:\MyProjects\Arcadia\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.pdb
+G:\MyProjects\Arcadia\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\ref\Arcadia.Launchers.dll
+G:\MyProjects\Arcadia\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\win-x64\Arcadia.Launchers.runtimeconfig.json
+G:\MyProjects\Arcadia\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.genruntimeconfig.cache
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\win-x64\Arcadia.Launchers.deps.json
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\win-x64\Arcadia.Launchers.runtimeconfig.json
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\win-x64\Arcadia.Launchers.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\win-x64\Arcadia.Launchers.pdb
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\win-x64\Arcadia.Core.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\win-x64\Arcadia.Core.pdb
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.csproj.AssemblyReference.cache
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.GeneratedMSBuildEditorConfig.editorconfig
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.AssemblyInfoInputs.cache
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.AssemblyInfo.cs
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.csproj.CoreCompileInputs.cache
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.sourcelink.json
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia..8813EFAF.Up2Date
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\refint\Arcadia.Launchers.dll
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.pdb
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.genruntimeconfig.cache
+g:\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\ref\Arcadia.Launchers.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\win-x64\Arcadia.Launchers.deps.json
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\win-x64\Arcadia.Launchers.runtimeconfig.json
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\win-x64\Arcadia.Launchers.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\win-x64\Arcadia.Launchers.pdb
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\win-x64\Arcadia.Core.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\bin\Debug\net8.0-windows\win-x64\Arcadia.Core.pdb
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.csproj.AssemblyReference.cache
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.AssemblyInfoInputs.cache
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.AssemblyInfo.cs
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.sourcelink.json
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia..8813EFAF.Up2Date
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\refint\Arcadia.Launchers.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.pdb
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\Arcadia.Launchers.genruntimeconfig.cache
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Launchers\obj\Debug\net8.0-windows\win-x64\ref\Arcadia.Launchers.dll

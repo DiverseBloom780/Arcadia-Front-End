@@ -1,17 +1,23 @@
 using System;
 using System.Collections.Generic;
+<<<<<<< HEAD
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
+=======
+>>>>>>> 282f32e (Overhaul Arcadia frontend and filter redistributables)
 using System.Threading.Tasks;
 using Octokit;
 
 namespace Arcadia.Updater
 {
+<<<<<<< HEAD
     /// <summary>
     /// Handles automatic updates from GitHub releases
     /// </summary>
+=======
+>>>>>>> 282f32e (Overhaul Arcadia frontend and filter redistributables)
     public class GitHubUpdater
     {
         private readonly GitHubClient _client;
@@ -21,6 +27,7 @@ namespace Arcadia.Updater
 
         public GitHubUpdater(string owner, string repository, string currentVersion)
         {
+<<<<<<< HEAD
             _owner = owner;
             _repository = repository;
             _currentVersion = currentVersion;
@@ -30,11 +37,20 @@ namespace Arcadia.Updater
         /// <summary>
         /// Check if an update is available
         /// </summary>
+=======
+            _client = new GitHubClient(new ProductHeaderValue("Arcadia-Launcher"));
+            _owner = owner;
+            _repository = repository;
+            _currentVersion = currentVersion;
+        }
+
+>>>>>>> 282f32e (Overhaul Arcadia frontend and filter redistributables)
         public async Task<UpdateInfo?> CheckForUpdatesAsync()
         {
             try
             {
                 var releases = await _client.Repository.Release.GetAll(_owner, _repository);
+<<<<<<< HEAD
                 var latestRelease = releases.FirstOrDefault(r => !r.Prerelease && !r.Draft);
 
                 if (latestRelease == null)
@@ -58,10 +74,27 @@ namespace Arcadia.Updater
                 }
 
                 return null;
+=======
+                if (releases.Count > 0)
+                {
+                    var latestRelease = releases[0];
+                    if (IsNewerThanCurrent(latestRelease.TagName))
+                    {
+                        return new UpdateInfo
+                        {
+                            Version = latestRelease.TagName,
+                            ReleaseNotes = latestRelease.Body,
+                            DownloadUrl = latestRelease.Assets.Count > 0 ? latestRelease.Assets[0].BrowserDownloadUrl : latestRelease.HtmlUrl,
+                            PublishedAt = latestRelease.PublishedAt ?? DateTimeOffset.Now
+                        };
+                    }
+                }
+>>>>>>> 282f32e (Overhaul Arcadia frontend and filter redistributables)
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Error checking for updates: {ex.Message}");
+<<<<<<< HEAD
                 return null;
             }
         }
@@ -148,10 +181,27 @@ namespace Arcadia.Updater
             {
                 var latest = new Version(latestVersion);
                 var current = new Version(currentVersion);
+=======
+            }
+
+            return null;
+        }
+
+        private bool IsNewerThanCurrent(string latestVersion)
+        {
+            if (string.IsNullOrEmpty(_currentVersion)) return true;
+            
+            try
+            {
+                // Simple semantic version comparison
+                var current = new Version(_currentVersion.TrimStart('v'));
+                var latest = new Version(latestVersion.TrimStart('v'));
+>>>>>>> 282f32e (Overhaul Arcadia frontend and filter redistributables)
                 return latest > current;
             }
             catch
             {
+<<<<<<< HEAD
                 // If version parsing fails, compare strings
                 return string.Compare(latestVersion, currentVersion, StringComparison.OrdinalIgnoreCase) > 0;
             }
@@ -199,6 +249,10 @@ del ""%~f0""
             {
                 Console.WriteLine($"Error fetching changelog: {ex.Message}");
                 return "Error fetching changelog";
+=======
+                // Fallback to string comparison if version format is non-standard
+                return string.Compare(latestVersion, _currentVersion, StringComparison.OrdinalIgnoreCase) > 0;
+>>>>>>> 282f32e (Overhaul Arcadia frontend and filter redistributables)
             }
         }
     }
@@ -207,8 +261,13 @@ del ""%~f0""
     {
         public string Version { get; set; } = string.Empty;
         public string ReleaseNotes { get; set; } = string.Empty;
+<<<<<<< HEAD
         public DateTime PublishedAt { get; set; }
         public string DownloadUrl { get; set; } = string.Empty;
         public string ReleaseName { get; set; } = string.Empty;
+=======
+        public string DownloadUrl { get; set; } = string.Empty;
+        public DateTimeOffset PublishedAt { get; set; }
+>>>>>>> 282f32e (Overhaul Arcadia frontend and filter redistributables)
     }
 }

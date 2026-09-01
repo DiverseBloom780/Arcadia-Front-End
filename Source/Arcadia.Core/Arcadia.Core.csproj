@@ -3,11 +3,21 @@
     <TargetFramework>net8.0-windows</TargetFramework>
     <OutputType>Library</OutputType>
     <Nullable>enable</Nullable>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PlatformTarget>x64</PlatformTarget>
+    <Platforms>x64</Platforms>
     <LangVersion>latest</LangVersion>
+<<<<<<< HEAD
     <UseWPF>false</UseWPF> <!-- Core should not depend on WPF -->
+=======
+    <OutputType>Library</OutputType>
+    <UseWPF>true</UseWPF>
+    <NoWarn>$(NoWarn);NETSDK1202</NoWarn>
+>>>>>>> 282f32e (Overhaul Arcadia frontend and filter redistributables)
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.119" />
   </ItemGroup>
 </Project>

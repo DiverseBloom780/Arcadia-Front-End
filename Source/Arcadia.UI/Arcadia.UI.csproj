@@ -1,25 +1,37 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
+    <AssemblyName>Arcadia</AssemblyName>
     <TargetFramework>net8.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PlatformTarget>x64</PlatformTarget>
+    <Platforms>x64</Platforms>
     <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <UseWPF>true</UseWPF>
     <UseWindowsForms>true</UseWindowsForms>
     <LangVersion>latest</LangVersion>
+<<<<<<< HEAD
     <RollForward>LatestMajor</RollForward>
+=======
+    <NoWarn>$(NoWarn);NETSDK1202</NoWarn>
+>>>>>>> 282f32e (Overhaul Arcadia frontend and filter redistributables)
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Arcadia.Core\Arcadia.Core.csproj" />
     <ProjectReference Include="..\Arcadia.Launchers\Arcadia.Launchers.csproj" />
     <ProjectReference Include="..\Arcadia.Updater\Arcadia.Updater.csproj" />
+    <ProjectReference Include="..\Arcadia.Media\Arcadia.Media.csproj" />
+    <ProjectReference Include="..\Arcadia.SmartWizard\Arcadia.SmartWizard.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="SharpDX" Version="4.2.0" />
     <PackageReference Include="SharpDX.Direct3D11" Version="4.2.0" />
     <PackageReference Include="SharpDX.DXGI" Version="4.2.0" />
+    <PackageReference Include="SharpDX.Mathematics" Version="4.2.0" />
+    <PackageReference Include="SharpDX.XInput" Version="4.2.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
   </ItemGroup>
 

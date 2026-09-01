@@ -1,0 +1,13 @@
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Updater\bin\Release\net8.0-windows\win-x64\Arcadia.Updater.deps.json
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Updater\bin\Release\net8.0-windows\win-x64\Arcadia.Updater.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Updater\bin\Release\net8.0-windows\win-x64\Arcadia.Updater.pdb
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Updater\obj\Release\net8.0-windows\win-x64\Arcadia.Updater.csproj.AssemblyReference.cache
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Updater\obj\Release\net8.0-windows\win-x64\Arcadia.Updater.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Updater\obj\Release\net8.0-windows\win-x64\Arcadia.Updater.AssemblyInfoInputs.cache
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Updater\obj\Release\net8.0-windows\win-x64\Arcadia.Updater.AssemblyInfo.cs
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Updater\obj\Release\net8.0-windows\win-x64\Arcadia.Updater.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Updater\obj\Release\net8.0-windows\win-x64\Arcadia.Updater.sourcelink.json
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Updater\obj\Release\net8.0-windows\win-x64\Arcadia.Updater.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Updater\obj\Release\net8.0-windows\win-x64\refint\Arcadia.Updater.dll
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Updater\obj\Release\net8.0-windows\win-x64\Arcadia.Updater.pdb
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.Updater\obj\Release\net8.0-windows\win-x64\ref\Arcadia.Updater.dll

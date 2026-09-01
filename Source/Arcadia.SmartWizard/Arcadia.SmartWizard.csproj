@@ -3,10 +3,12 @@
     <TargetFramework>net8.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Arcadia.Core\Arcadia.Core.csproj" />
+    <ProjectReference Include="..\Arcadia.Media\Arcadia.Media.csproj" />
   </ItemGroup>
 
   <ItemGroup>

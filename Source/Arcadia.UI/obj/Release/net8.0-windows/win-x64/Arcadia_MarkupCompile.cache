@@ -1,0 +1,20 @@
+﻿Arcadia
+
+
+winexe
+C#
+.cs
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\obj\Release\net8.0-windows\win-x64\
+Arcadia.UI
+none
+false
+TRACE;RELEASE;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+C:\Users\Kevin\.openclaw\workspace\MyProjects\Arcadia Frontend\Source\Arcadia.UI\App.xaml
+10-91338557
+
+14-52011647
+224-758962139
+Controls\GameWheelControl.xaml;MainWindow.xaml;Tabs\GamesTab.xaml;Tabs\LibraryTab.xaml;Tabs\NewsTab.xaml;Tabs\SettingsTab.xaml;Tabs\SmartWizardTab.xaml;Tabs\UpdaterTab.xaml;Themes\DarkTheme.xaml;Themes\PremiumTheme.xaml;
+
+False
+

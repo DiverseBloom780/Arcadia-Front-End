@@ -2,9 +2,16 @@
   <PropertyGroup>
     <TargetFramework>net8.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PlatformTarget>x64</PlatformTarget>
+    <Platforms>x64</Platforms>
     <LangVersion>latest</LangVersion>
+<<<<<<< HEAD
     <OutputType>Library</OutputType>
     <UseWPF>true</UseWPF>
+=======
+    <NoWarn>$(NoWarn);NETSDK1202</NoWarn>
+>>>>>>> 282f32e (Overhaul Arcadia frontend and filter redistributables)
   </PropertyGroup>
 
   <ItemGroup>

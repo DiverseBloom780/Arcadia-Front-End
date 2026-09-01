@@ -46,6 +46,33 @@
                 </Setter.Value>
             </Setter>
         </Style>
+
+        <Style x:Key="RailButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="#D8FFFFFF"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="Padding" Value="18,14"/>
+            <Setter Property="Margin" Value="12,3"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value><ControlTemplate TargetType="Button">
+                    <Border x:Name="railBorder" Background="{TemplateBinding Background}" CornerRadius="8" Padding="{TemplateBinding Padding}">
+                        <ContentPresenter/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="railBorder" Property="Background" Value="#2200D9FF"/>
+                            <Setter Property="Foreground" Value="White"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="railBorder" Property="Background" Value="#4400D9FF"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate></Setter.Value>
+            </Setter>
+        </Style>
     </Window.Resources>
 
     <Grid>
@@ -81,29 +108,31 @@
                                Text="--:--:--"/>
                 </StackPanel>
 
-                <!-- Navigation Buttons -->
-                <StackPanel Orientation="Horizontal" 
-                            HorizontalAlignment="Center" 
-                            VerticalAlignment="Center">
-                    <Button Content="🎮 Game Wheel" 
-                            Click="GamesButton_Click" 
-                            Style="{StaticResource HeaderButtonStyle}"/>
-                    <Button Content="📚 Library" 
-                            Click="LibraryButton_Click" 
-                            Style="{StaticResource HeaderButtonStyle}"/>
-                    <Button Content="⚙️ Settings" 
-                            Click="SettingsButton_Click" 
-                            Style="{StaticResource HeaderButtonStyle}"/>
-                    <Button Content="🔄 Updater" 
-                            Click="UpdaterButton_Click" 
-                            Style="{StaticResource HeaderButtonStyle}"/>
-                </StackPanel>
+                <TextBlock Text="GAME CENTER" HorizontalAlignment="Right" VerticalAlignment="Center"
+                           Margin="0,0,48,0" Foreground="#88FFFFFF" FontSize="16"/>
             </Grid>
 
             <!-- Row 1: MAIN CONTENT AREA (ContentArea) -->
-            <Grid x:Name="ContentArea" Grid.Row="1">
-                <!-- This Grid will host the UserControls (tabs) switched by SwitchTab() -->
-                <!-- The default view (GamesTab) is set in the MainWindow constructor -->
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="250"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" Background="#CC0D1017" BorderBrush="#2200D9FF" BorderThickness="0,0,1,0">
+                    <StackPanel Margin="0,24,0,0">
+                        <TextBlock Text="NAVIGATION" Foreground="#6699AABB" FontSize="12" FontWeight="Bold" Margin="30,0,0,12"/>
+                        <Button Content="🎮   GAME WHEEL" Click="GamesButton_Click" Style="{StaticResource RailButtonStyle}"/>
+                        <Button Content="📚   LIBRARY" Click="LibraryButton_Click" Style="{StaticResource RailButtonStyle}"/>
+                        <Button Content="📰   DISCOVER" Click="NewsButton_Click" Style="{StaticResource RailButtonStyle}"/>
+                        <Button Content="⚙    SETTINGS" Click="SettingsButton_Click" Style="{StaticResource RailButtonStyle}"/>
+                        <Button Content="↻    UPDATER" Click="UpdaterButton_Click" Style="{StaticResource RailButtonStyle}"/>
+                        <Separator Margin="25,18" Background="#2288AACC"/>
+                        <Button Content="✦    SMART WIZARD" Click="SmartWizardButton_Click" Style="{StaticResource RailButtonStyle}"/>
+                    </StackPanel>
+                </Border>
+                <Grid x:Name="ContentArea" Grid.Column="1" Margin="18,0,0,0">
+                    <!-- Active view is hosted here. -->
+                </Grid>
             </Grid>
             
             <!-- Row 2: Footer Section (Keybinds) -->
@@ -135,6 +164,49 @@
                     </Border>
                 </StackPanel>
             </Grid>
+        </Grid>
+
+        <!-- Loading Overlay -->
+        <Grid x:Name="SearchOverlay" Background="#EE080A0F" Visibility="Collapsed" Panel.ZIndex="20">
+            <Border Width="760" MaxHeight="760" Padding="28" Background="#F21A1D26"
+                    BorderBrush="#6600D9FF" BorderThickness="1" CornerRadius="16"
+                    HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="SEARCH YOUR LIBRARY" Foreground="#00D9FF"
+                               FontSize="24" FontWeight="Bold"/>
+                    <TextBox x:Name="SearchBox" Grid.Row="1" Margin="0,18,0,16"
+                             Height="52" Padding="14,8" FontSize="22"
+                             Foreground="White" Background="#33FFFFFF"
+                             BorderBrush="#6600D9FF" BorderThickness="1"
+                             TextChanged="SearchBox_TextChanged"
+                             KeyDown="SearchBox_KeyDown"/>
+                    <ListBox x:Name="SearchResults" Grid.Row="2" MinHeight="180"
+                             Background="Transparent" BorderThickness="0"
+                             Foreground="White" FontSize="18"
+                             SelectionChanged="SearchResults_SelectionChanged">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Border Padding="12,10" Margin="0,0,0,6" Background="#22FFFFFF" CornerRadius="8">
+                                    <StackPanel>
+                                        <TextBlock Text="{Binding Title}" FontWeight="Bold"/>
+                                        <TextBlock Foreground="#99FFFFFF" FontSize="13">
+                                            <Run Text="{Binding Platform}"/>
+                                            <Run Text="  •  "/>
+                                            <Run Text="{Binding Publisher}"/>
+                                        </TextBlock>
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </Grid>
+            </Border>
         </Grid>
 
         <!-- Loading Overlay -->

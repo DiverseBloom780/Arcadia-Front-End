@@ -1,0 +1,13 @@
+G:\MyProjects\Arcadia\Source\Arcadia.Core\bin\Debug\net8.0-windows\win-x64\Arcadia.Core.deps.json
+G:\MyProjects\Arcadia\Source\Arcadia.Core\bin\Debug\net8.0-windows\win-x64\Arcadia.Core.dll
+G:\MyProjects\Arcadia\Source\Arcadia.Core\bin\Debug\net8.0-windows\win-x64\Arcadia.Core.pdb
+G:\MyProjects\Arcadia\Source\Arcadia.Core\obj\Debug\net8.0-windows\win-x64\Arcadia.Core.csproj.AssemblyReference.cache
+G:\MyProjects\Arcadia\Source\Arcadia.Core\obj\Debug\net8.0-windows\win-x64\Arcadia.Core.GeneratedMSBuildEditorConfig.editorconfig
+G:\MyProjects\Arcadia\Source\Arcadia.Core\obj\Debug\net8.0-windows\win-x64\Arcadia.Core.AssemblyInfoInputs.cache
+G:\MyProjects\Arcadia\Source\Arcadia.Core\obj\Debug\net8.0-windows\win-x64\Arcadia.Core.AssemblyInfo.cs
+G:\MyProjects\Arcadia\Source\Arcadia.Core\obj\Debug\net8.0-windows\win-x64\Arcadia.Core.csproj.CoreCompileInputs.cache
+G:\MyProjects\Arcadia\Source\Arcadia.Core\obj\Debug\net8.0-windows\win-x64\Arcadia.Core.sourcelink.json
+G:\MyProjects\Arcadia\Source\Arcadia.Core\obj\Debug\net8.0-windows\win-x64\Arcadia.Core.dll
+G:\MyProjects\Arcadia\Source\Arcadia.Core\obj\Debug\net8.0-windows\win-x64\refint\Arcadia.Core.dll
+G:\MyProjects\Arcadia\Source\Arcadia.Core\obj\Debug\net8.0-windows\win-x64\Arcadia.Core.pdb
+G:\MyProjects\Arcadia\Source\Arcadia.Core\obj\Debug\net8.0-windows\win-x64\ref\Arcadia.Core.dll
