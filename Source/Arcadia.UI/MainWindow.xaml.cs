@@ -138,7 +138,7 @@ namespace Arcadia.UI
                         existingGames = allDetected;
                     }
 
-                    var mediaDownloader = new MediaDownloaderService();
+                    var mediaDownloader = new MediaDownloaderService(_settingsManager.Settings.Media);
                     foreach (var game in existingGames)
                     {
                         if (mediaDownloader.DownloadMetadataAsync(game).GetAwaiter().GetResult())

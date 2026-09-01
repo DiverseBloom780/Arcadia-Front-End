@@ -21,14 +21,24 @@ namespace Arcadia.Media
         }
 
         public async Task<string> DownloadAndCacheImageAsync(string gameId, string imageUrl)
+            => await DownloadAndCacheMediaAsync(gameId, imageUrl, "BoxArt");
+
+        public async Task<string> DownloadAndCacheMediaAsync(string gameId, string mediaUrl, string mediaType)
         {
-            if (string.IsNullOrEmpty(imageUrl))
+            if (string.IsNullOrEmpty(mediaUrl))
                 return string.Empty;
 
             try
             {
-                var fileName = $"{gameId}_{Path.GetFileName(new Uri(imageUrl).LocalPath)}";
-                var localPath = Path.Combine(_cacheDirectory, fileName);
+                var uri = new Uri(mediaUrl);
+                string extension = Path.GetExtension(uri.LocalPath);
+                if (string.IsNullOrWhiteSpace(extension) || extension.Length > 5)
+                    extension = mediaType.Equals("Video", StringComparison.OrdinalIgnoreCase) ? ".mp4" : ".jpg";
+
+                var directory = Path.Combine(Path.GetDirectoryName(_cacheDirectory)!, mediaType);
+                Directory.CreateDirectory(directory);
+                var fileName = $"{gameId}_{mediaType.ToLowerInvariant()}{extension}";
+                var localPath = Path.Combine(directory, fileName);
 
                 if (File.Exists(localPath))
                 {
@@ -37,7 +47,7 @@ namespace Arcadia.Media
 
                 using var client = new HttpClient();
                 client.DefaultRequestHeaders.UserAgent.ParseAdd("Arcadia/1.0");
-                var response = await client.GetAsync(imageUrl, HttpCompletionOption.ResponseHeadersRead);
+                var response = await client.GetAsync(mediaUrl, HttpCompletionOption.ResponseHeadersRead);
                 response.EnsureSuccessStatusCode();
                 var imageBytes = await response.Content.ReadAsByteArrayAsync();
                 if (imageBytes.Length == 0)
@@ -48,7 +58,7 @@ namespace Arcadia.Media
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error caching image {imageUrl}: {ex.Message}");
+                Console.WriteLine($"Error caching media {mediaUrl}: {ex.Message}");
                 return string.Empty;
             }
         }

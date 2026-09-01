@@ -102,6 +102,10 @@ namespace Arcadia.Core.Services
         public string PreferredImageFormat { get; set; } = "PNG";
         public int MaxImageWidth { get; set; } = 1920;
         public int MaxImageHeight { get; set; } = 1080;
+        public string ScreenScraperDeveloperId { get; set; } = string.Empty;
+        public string ScreenScraperDeveloperPassword { get; set; } = string.Empty;
+        public string ScreenScraperUsername { get; set; } = string.Empty;
+        public string ScreenScraperPassword { get; set; } = string.Empty;
     }
 
     public class UpdateSettings

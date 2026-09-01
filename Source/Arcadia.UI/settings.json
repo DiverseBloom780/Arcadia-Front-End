@@ -43,7 +43,11 @@
     "DownloadVideoPreview": true,
     "PreferredImageFormat": "PNG",
     "MaxImageWidth": 1920,
-    "MaxImageHeight": 1080
+    "MaxImageHeight": 1080,
+    "ScreenScraperDeveloperId": "",
+    "ScreenScraperDeveloperPassword": "",
+    "ScreenScraperUsername": "",
+    "ScreenScraperPassword": ""
   },
   "UpdateSettings": {
     "GitHubOwner": "DiverseBloom780",
