@@ -36,7 +36,12 @@ namespace Arcadia.Media
                 }
 
                 using var client = new HttpClient();
-                var imageBytes = await client.GetByteArrayAsync(imageUrl);
+                client.DefaultRequestHeaders.UserAgent.ParseAdd("Arcadia/1.0");
+                var response = await client.GetAsync(imageUrl, HttpCompletionOption.ResponseHeadersRead);
+                response.EnsureSuccessStatusCode();
+                var imageBytes = await response.Content.ReadAsByteArrayAsync();
+                if (imageBytes.Length == 0)
+                    return string.Empty;
                 await File.WriteAllBytesAsync(localPath, imageBytes);
 
                 return localPath;

@@ -14,6 +14,7 @@ using Arcadia.Core.Services;
 using Arcadia.Updater;
 using Arcadia.Launchers;
 using Arcadia.SmartWizard;
+using Arcadia.Media;
 using Arcadia.UI.Services;
 using SharpDX.XInput;
 
@@ -93,29 +94,6 @@ namespace Arcadia.UI
             {
                 _games = await Task.Run(() => 
                 {
-<<<<<<< HEAD
-                    return new List<Game>
-                    {
-                        new Game { Title = "Aero Fighters", Platform = "Arcade", ReleaseYear = 1992, Developer = "Video System" },
-                        new Game { Title = "After Burner II", Platform = "Arcade", ReleaseYear = 1987, Developer = "Sega" },
-                        new Game { Title = "Altered Beast", Platform = "Arcade", ReleaseYear = 1988, Developer = "Sega" },
-                        new Game { Title = "Bubble Bobble", Platform = "Arcade", ReleaseYear = 1986, Developer = "Taito" },
-                        new Game { Title = "Cadillacs and Dinosaurs", Platform = "Arcade", ReleaseYear = 1993, Developer = "Capcom" },
-                        new Game { Title = "Darkstalkers", Platform = "Arcade", ReleaseYear = 1994, Developer = "Capcom" },
-                        new Game { Title = "Final Fight", Platform = "Arcade", ReleaseYear = 1989, Developer = "Capcom" },
-                        new Game { Title = "Galaga", Platform = "Arcade", ReleaseYear = 1981, Developer = "Namco" },
-                        new Game { Title = "Golden Axe", Platform = "Arcade", ReleaseYear = 1989, Developer = "Sega" },
-                        new Game { Title = "Metal Slug", Platform = "Arcade", ReleaseYear = 1996, Developer = "Nazca" },
-                        new Game { Title = "Out Run", Platform = "Arcade", ReleaseYear = 1986, Developer = "Sega" },
-                        new Game { Title = "Pac-Man", Platform = "Arcade", ReleaseYear = 1980, Developer = "Namco" },
-                        new Game { Title = "R-Type", Platform = "Arcade", ReleaseYear = 1987, Developer = "Irem" },
-                        new Game { Title = "Street Fighter II", Platform = "Arcade", ReleaseYear = 1991, Developer = "Capcom" },
-                        new Game { Title = "The King of Fighters '98", Platform = "Arcade", ReleaseYear = 1998, Developer = "SNK" },
-                        new Game { Title = "Half-Life 2", Platform = "PC", ReleaseYear = 2004, Developer = "Valve" },
-                        new Game { Title = "Portal 2", Platform = "PC", ReleaseYear = 2011, Developer = "Valve" },
-                        new Game { Title = "Cyberpunk 2077", Platform = "PC", ReleaseYear = 2020, Developer = "CD Projekt RED" }
-                    };
-=======
                     var existingGames = _gameDatabase.GetAllGames();
 
                     // Remove runtime/tool entries imported by older scans.
@@ -156,12 +134,18 @@ namespace Arcadia.UI
                         {
                             _gameDatabase.AddGame(g);
                         }
-                        
-                        return allDetected;
+
+                        existingGames = allDetected;
                     }
-                    
+
+                    var mediaDownloader = new MediaDownloaderService();
+                    foreach (var game in existingGames)
+                    {
+                        if (mediaDownloader.DownloadMetadataAsync(game).GetAwaiter().GetResult())
+                            _gameDatabase.UpdateGame(game);
+                    }
+
                     return existingGames;
->>>>>>> 282f32e (Overhaul Arcadia frontend and filter redistributables)
                 });
                 
                 // Refresh the current tab if it's showing games

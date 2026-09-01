@@ -15,28 +15,25 @@ namespace Arcadia.Media
 
         public async Task<bool> DownloadMetadataAsync(Game game)
         {
-            // In a real application, this would query IGDB, SteamGridDB, or GiantBomb.
-            // For now, we simulate an API call and use placeholder premium images.
-            await Task.Delay(1000); // Simulate network latency
-
             bool updated = false;
 
-            if (string.IsNullOrEmpty(game.Description))
+            // Steam publishes canonical artwork keyed by AppId. This avoids title
+            // searches returning the wrong game (or a similarly named DLC/tool).
+            if (game.LaunchType == LaunchType.Steam && !string.IsNullOrWhiteSpace(game.LauncherId))
             {
-                game.Description = $"An epic adventure awaits in {game.Title}. Experience premium gameplay and stunning visuals.";
-                updated = true;
-            }
+                string imageUrl = $"https://cdn.cloudflare.steamstatic.com/steam/apps/{game.LauncherId}/library_600x900_2x.jpg";
+                bool needsArtwork = string.IsNullOrWhiteSpace(game.BoxArtPath)
+                    || !System.IO.File.Exists(game.BoxArtPath)
+                    || game.BoxArtPath.Contains("picsum", StringComparison.OrdinalIgnoreCase);
 
-            if (string.IsNullOrEmpty(game.BoxArtPath))
-            {
-                // Placeholder dummy image URL for demo purposes
-                string dummyUrl = $"https://picsum.photos/seed/{game.Id}/600/900";
-                string localPath = await _cacheManager.DownloadAndCacheImageAsync(game.Id, dummyUrl);
-                
-                if (!string.IsNullOrEmpty(localPath))
+                if (needsArtwork)
                 {
-                    game.BoxArtPath = localPath;
-                    updated = true;
+                    string localPath = await _cacheManager.DownloadAndCacheImageAsync(game.Id, imageUrl);
+                    if (!string.IsNullOrEmpty(localPath))
+                    {
+                        game.BoxArtPath = localPath;
+                        updated = true;
+                    }
                 }
             }
 

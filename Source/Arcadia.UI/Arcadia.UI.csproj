@@ -11,11 +11,7 @@
     <UseWPF>true</UseWPF>
     <UseWindowsForms>true</UseWindowsForms>
     <LangVersion>latest</LangVersion>
-<<<<<<< HEAD
-    <RollForward>LatestMajor</RollForward>
-=======
     <NoWarn>$(NoWarn);NETSDK1202</NoWarn>
->>>>>>> 282f32e (Overhaul Arcadia frontend and filter redistributables)
   </PropertyGroup>
 
   <ItemGroup>

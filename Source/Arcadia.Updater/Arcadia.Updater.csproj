@@ -6,17 +6,8 @@
     <PlatformTarget>x64</PlatformTarget>
     <Platforms>x64</Platforms>
     <LangVersion>latest</LangVersion>
-<<<<<<< HEAD
-    <OutputType>Library</OutputType>
-    <UseWPF>true</UseWPF>
-=======
     <NoWarn>$(NoWarn);NETSDK1202</NoWarn>
->>>>>>> 282f32e (Overhaul Arcadia frontend and filter redistributables)
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Arcadia.Core\Arcadia.Core.csproj" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Octokit" Version="9.0.0" />
